@@ -134,14 +134,14 @@ http://localhost:3000
 
 # 5. Scripts Disponíveis
 
-| Script       | Descrição                                                                  |
-| ------------ | -------------------------------------------------------------------------- |
-| `dev`        | Sobe o banco, aguarda o Postgres, roda as migrations e inicia o Next.js    |
-| `test`       | Executa testes Jest                                                        |
-| `test:watch` | Testes em modo observador                                                  |
-| `lint:check` | Verifica formatação Prettier                                               |
-| `lint:fix`   | Corrige formatação                                                         |
-| `release`    | Gera uma nova versão, promovendo `development` → `master` → `release-0.0X` |
+| Script       | Descrição                                                                   |
+| ------------ | --------------------------------------------------------------------------- |
+| `dev`        | Sobe o banco, aguarda o Postgres, roda as migrations e inicia o Next.js     |
+| `test`       | Executa testes Jest                                                         |
+| `test:watch` | Testes em modo observador                                                   |
+| `lint:check` | Verifica formatação Prettier                                                |
+| `lint:fix`   | Corrige formatação                                                          |
+| `release`    | Gera uma nova versão, promovendo `development` → `master` → `release-0.0.X` |
 
 ---
 
@@ -179,17 +179,17 @@ npm run lint:fix
 
 O projeto usa 3 branches fixas, cada uma sempre uma versão à frente da anterior:
 
-| Branch         | Papel                                          | Versão (exemplo) |
-| -------------- | ---------------------------------------------- | ---------------- |
-| `release-0.0X` | Produção (uma branch nova por versão liberada) | `0.01`           |
-| `master`       | Stage, para testar antes de liberar            | `0.02`           |
-| `development`  | Onde o dia a dia do desenvolvimento acontece   | `0.03`           |
+| Branch          | Papel                                          | Versão (exemplo) |
+| --------------- | ---------------------------------------------- | ---------------- |
+| `release-0.0.X` | Produção (uma branch nova por versão liberada) | `0.0.1`          |
+| `master`        | Stage, para testar antes de liberar            | `0.0.2`          |
+| `development`   | Onde o dia a dia do desenvolvimento acontece   | `0.0.3`          |
 
-A versão de cada branch fica no campo `version` do `package.json` e é exposta em `GET /api/v1/status`.
+A versão de cada branch fica no campo `version` do `package.json` (precisa ser um semver válido — por isso `0.0.X` e não `0.0X`) e é exposta em `GET /api/v1/status`.
 
 ## Gerando uma nova versão
 
-Todo o trabalho novo é feito na `development`. Quando quiser liberar essa versão (promover `development` → `master` → uma nova `release-0.0X`), rode a partir da `development`, com a árvore de trabalho limpa (sem alterações pendentes):
+Todo o trabalho novo é feito na `development`. Quando quiser liberar essa versão (promover `development` → `master` → uma nova `release-0.0.X`), rode a partir da `development`, com a árvore de trabalho limpa (sem alterações pendentes) **e com o Node correto ativo (`nvm use`)**:
 
 ```bash
 npm run release
@@ -198,12 +198,12 @@ npm run release
 O script (`infra/scripts/release.js`) faz automaticamente:
 
 1. Lê a versão atual de `master` e de `development` (direto do `package.json` de cada branch).
-2. Cria uma nova branch `release-0.0X` a partir do estado atual da `master` (ela herda a versão que a `master` tinha).
+2. Cria uma nova branch `release-0.0.X` a partir do estado atual da `master` (ela herda a versão que a `master` tinha).
 3. Faz merge da `development` na `master` (a `master` passa a ter o código e a versão que estavam na `development`).
-4. Incrementa a versão da `development` em `+0.01` e commita (`chore: bump version to 0.0X`).
-5. Dá `push` das três branches (`master`, `development` e a nova `release-0.0X`) para o `origin`.
+4. Incrementa a versão da `development` em `+1` no último número e commita (`chore: bump version to 0.0.X`).
+5. Dá `push` das três branches (`master`, `development` e a nova `release-0.0.X`) para o `origin`.
 
-Exemplo: partindo de `release-0.01 / master 0.02 / development 0.03`, rodar `npm run release` resulta em `release-0.02 (nova) / master 0.03 / development 0.04`.
+Exemplo: partindo de `release-0.0.1 / master 0.0.2 / development 0.0.3`, rodar `npm run release` resulta em `release-0.0.2 (nova) / master 0.0.3 / development 0.0.4`.
 
 Se a `master` e a `development` divergirem em código (não só na versão) e o merge gerar conflito, o script para antes de dar `push` — resolva o conflito manualmente e finalize o `push` das branches indicado na mensagem de erro.
 

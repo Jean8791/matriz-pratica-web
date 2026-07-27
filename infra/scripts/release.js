@@ -17,11 +17,11 @@ function readVersionFromBranch(branch) {
 }
 
 function versionToNumber(version) {
-  return parseInt(version.split(".")[1], 10);
+  return parseInt(version.split(".")[2], 10);
 }
 
 function numberToVersion(number) {
-  return `0.${String(number).padStart(2, "0")}`;
+  return `0.0.${number}`;
 }
 
 function setVersionInPackageJson(newVersion) {
