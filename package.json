@@ -1,6 +1,6 @@
 {
   "name": "lavrio-web",
-  "version": "1.0.0",
+  "version": "0.03",
   "description": "Aplicação web do Lavrio, construída com Next.js, React e PostgreSQL.",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,8 @@
     "test:watch": "jest --watchAll --runInBand",
     "migration:create": "node-pg-migrate -m infra/migrations create",
     "migration:up": "node-pg-migrate -m infra/migrations --envPath .env.development up",
-    "wait-for-postgres": "node infra/scripts/wait-for-postgres.js"
+    "wait-for-postgres": "node infra/scripts/wait-for-postgres.js",
+    "release": "node infra/scripts/release.js"
   },
   "repository": {
     "type": "git",
