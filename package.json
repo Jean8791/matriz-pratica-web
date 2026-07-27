@@ -1,6 +1,6 @@
 {
   "name": "lavrio-web",
-  "version": "1.0.0",
+  "version": "0.02",
   "description": "Aplicação web do Lavrio, construída com Next.js, React e PostgreSQL.",
   "main": "index.js",
   "scripts": {
