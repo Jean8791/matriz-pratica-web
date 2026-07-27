@@ -1,6 +1,6 @@
-# lavrio-web
+# matriz-pratica-web
 
-Aplicação web do **Lavrio**, construída com **Next.js**, **React**, **PostgreSQL via Docker Compose**, **Jest** e
+Aplicação web do **Matriz Prática**, construída com **Next.js**, **React**, **PostgreSQL via Docker Compose**, **Jest** e
 **Prettier**.
 
 Este documento explica como instalar, configurar e executar o ambiente completo.
@@ -32,8 +32,8 @@ Requisitos mínimos:
 ## 1.1 Clonar o repositório
 
 ```bash
-git clone https://github.com/Jean8791/lavrio-web.git
-cd lavrio-web
+git clone https://github.com/Jean8791/matriz-pratica-web.git
+cd matriz-pratica-web
 ```
 
 ## 1.2 Instalar dependências
