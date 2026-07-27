@@ -108,13 +108,13 @@ services:
 
 Crie uma nova conexão PostgreSQL com:
 
-| Campo    | Valor          |
-| -------- | -------------- |
-| Host     | localhost      |
-| Port     | 5432           |
-| Database | lavrio_db      |
-| Username | lavrio_user    |
-| Password | local_password |
+| Campo    | Valor               |
+| -------- | ------------------- |
+| Host     | localhost           |
+| Port     | 5432                |
+| Database | matriz_pratica_db   |
+| Username | matriz_pratica_user |
+| Password | local_password      |
 
 ---
 
