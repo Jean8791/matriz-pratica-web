@@ -1,4 +1,6 @@
+import { execSync } from "node:child_process";
 import database from "infra/database.js";
+import { version } from "../../../../package.json";
 
 async function status(request, response) {
   const updatedAt = new Date().toISOString();
@@ -21,6 +23,7 @@ async function status(request, response) {
 
   response.status(200).json({
     updated_at: updatedAt,
+    version: version,
     dependencies: {
       database: {
         version: databaseVersionValue,
