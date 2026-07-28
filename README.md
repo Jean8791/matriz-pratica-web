@@ -141,7 +141,8 @@ http://localhost:3000
 | `test:watch` | Testes em modo observador                                                   |
 | `lint:check` | Verifica formatação Prettier                                                |
 | `lint:fix`   | Corrige formatação                                                          |
-| `release`    | Gera uma nova versão, promovendo `development` → `master` → `release-0.0.X` |
+| `release:staging`    | Promove `development` → `master` (stage) |
+| `release:production` | Promove `master` → `release` (produção) e cria a tag de versão |
 
 ---
 
@@ -177,35 +178,63 @@ npm run lint:fix
 
 # 8. Versionamento e Releases
 
-O projeto usa 3 branches fixas, cada uma sempre uma versão à frente da anterior:
+O projeto usa 3 branches fixas, que **nunca mudam de nome** (não há mais uma branch nova por versão):
 
-| Branch          | Papel                                          | Versão (exemplo) |
-| --------------- | ---------------------------------------------- | ---------------- |
-| `release-0.0.X` | Produção (uma branch nova por versão liberada) | `0.0.1`          |
-| `master`        | Stage, para testar antes de liberar            | `0.0.2`          |
-| `development`   | Onde o dia a dia do desenvolvimento acontece   | `0.0.3`          |
+| Branch        | Papel                                         | Aponta para produção via |
+| ------------- | ---------------------------------------------- | ------------------------- |
+| `release`     | Produção                                       | Production Branch da Vercel |
+| `master`      | Stage, para testar antes de liberar            | —                          |
+| `development` | Onde o dia a dia do desenvolvimento acontece   | —                          |
 
-A versão de cada branch fica no campo `version` do `package.json` (precisa ser um semver válido — por isso `0.0.X` e não `0.0X`) e é exposta em `GET /api/v1/status`.
+A versão do projeto fica só no campo `version` do `package.json` (precisa ser um semver válido — por isso `0.0.X` e não `0.0X`) e é exposta em `GET /api/v1/status`. Cada versão promovida para produção ganha também uma tag git no formato `vX.Y.Z` (ex: `v0.0.4`), criada no momento do `release:production`. É essa tag — não mais o nome da branch — que identifica qual versão está em produção, o que permite rollback sem precisar trocar a Production Branch na Vercel.
 
-## Gerando uma nova versão
+## Fluxo
 
-Todo o trabalho novo é feito na `development`. Quando quiser liberar essa versão (promover `development` → `master` → uma nova `release-0.0.X`), rode a partir da `development`, com a árvore de trabalho limpa (sem alterações pendentes) **e com o Node correto ativo (`nvm use`)**:
-
-```bash
-npm run release
+```
+development (código novo)
+     │  npm run release:staging
+     ▼
+master (testa em stage por um tempo)
+     │  npm run release:production
+     ▼
+release (produção, com tag vX.Y.Z)
 ```
 
-O script (`infra/scripts/release.js`) faz automaticamente:
+## 1. Promover development → master (stage)
 
-1. Lê a versão atual de `master` e de `development` (direto do `package.json` de cada branch).
-2. Cria uma nova branch `release-0.0.X` a partir do estado atual da `master` (ela herda a versão que a `master` tinha).
-3. Faz merge da `development` na `master` (a `master` passa a ter o código e a versão que estavam na `development`).
-4. Incrementa a versão da `development` em `+1` no último número e commita (`chore: bump version to 0.0.X`).
-5. Dá `push` das três branches (`master`, `development` e a nova `release-0.0.X`) para o `origin`.
+Rode a partir de qualquer branch, com a árvore de trabalho limpa (sem alterações pendentes) **e com o Node correto ativo (`nvm use`)**:
 
-Exemplo: partindo de `release-0.0.1 / master 0.0.2 / development 0.0.3`, rodar `npm run release` resulta em `release-0.0.2 (nova) / master 0.0.3 / development 0.0.4`.
+```bash
+npm run release:staging
+```
 
-Se a `master` e a `development` divergirem em código (não só na versão) e o merge gerar conflito, o script para antes de dar `push` — resolva o conflito manualmente e finalize o `push` das branches indicado na mensagem de erro.
+O script (`infra/scripts/promote-to-master.js`) faz automaticamente:
+
+1. Lê a versão atual de `master` e de `development` (direto do `package.json` de cada branch) e garante que a da `development` é maior.
+2. Faz checkout de `master` e merge de `development` (`--no-edit`).
+3. Incrementa a versão da `development` em `+1` no último número e commita (`chore: bump version to 0.0.X`).
+4. Dá `push` de `master` e `development` para o `origin`.
+
+Se o merge gerar conflito, o script para e mostra as instruções na tela: resolva o conflito, `git add`, `git commit` e rode `npm run release:staging` de novo — o script detecta que o merge já foi concluído e só termina o bump de versão da `development`.
+
+## 2. Promover master → release (produção)
+
+Depois de validar a versão em stage, rode:
+
+```bash
+npm run release:production
+```
+
+O script (`infra/scripts/promote-to-release.js`) faz automaticamente:
+
+1. Lê a versão atual de `master` e garante que ainda não existe uma tag `vX.Y.Z` correspondente.
+2. Faz checkout de `release` e merge de `master` (`--no-edit`).
+3. Cria a tag `vX.Y.Z` apontando para o commit de release.
+4. Dá `push` de `release` e da tag para o `origin`.
+
+Se o merge gerar conflito, o mesmo princípio se aplica: resolva manualmente, `git commit` e rode `npm run release:production` de novo.
+
+Para reverter uma versão em produção, use "Promote to Production" no deployment anterior direto no dashboard da Vercel, ou reverta a tag anterior manualmente com git.
 
 ---
 
