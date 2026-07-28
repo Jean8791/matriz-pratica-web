@@ -15,7 +15,8 @@
     "migration:create": "node-pg-migrate -m infra/migrations create",
     "migration:up": "node-pg-migrate -m infra/migrations --envPath .env.development up",
     "wait-for-postgres": "node infra/scripts/wait-for-postgres.js",
-    "release": "node infra/scripts/release.js"
+    "release:staging": "node infra/scripts/promote-to-master.js",
+    "release:production": "node infra/scripts/promote-to-release.js"
   },
   "repository": {
     "type": "git",
