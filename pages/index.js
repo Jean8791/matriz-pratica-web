@@ -1,5 +1,14 @@
+import ProjectMenu from "shared/components/ProjectMenu.js";
+import Footer from "shared/components/Footer.js";
+
 function Home() {
-  return <h1>Matriz Prática development</h1>;
+  return (
+    <div>
+      <h1>Matriz Prática</h1>
+      <ProjectMenu />
+      <Footer />
+    </div>
+  );
 }
 
 export default Home;
