@@ -2,7 +2,8 @@ import Link from "next/link";
 
 const projects = [
   { name: "Exemplo Projeto", path: "/exemplo-projeto" },
-  { name: "Mini Raio-X Rural", path: "/raio-x-rural" },
+  { name: "Agro e Negócios Rurais", path: "/agro-e-negocios-rurais" },
+  { name: "Maternidade e Desenvolvimento Infantil", path: "/maternidade-e-desenvolvimento-infantil" },
 ];
 
 function ProjectMenu() {
