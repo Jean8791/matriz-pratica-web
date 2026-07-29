@@ -1,6 +1,6 @@
 {
   "name": "matriz-pratica-web",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Aplicação web do Matriz Prática, construída com Next.js, React e PostgreSQL.",
   "main": "index.js",
   "scripts": {
