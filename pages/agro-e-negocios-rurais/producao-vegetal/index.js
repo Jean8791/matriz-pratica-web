@@ -1,43 +1,34 @@
-import Link from "next/link";
+import HubPage from "@/shared/components/HubPage.js";
+
+const links = [
+  {
+    href: "/agro-e-negocios-rurais/producao-vegetal/hortalicas",
+    label: "Hortaliças",
+  },
+  {
+    href: "/agro-e-negocios-rurais/producao-vegetal/morango",
+    label: "Morango",
+  },
+  {
+    href: "/agro-e-negocios-rurais/producao-vegetal/alface",
+    label: "Alface",
+  },
+  {
+    href: "/agro-e-negocios-rurais/producao-vegetal/microverdes",
+    label: "Microverdes",
+  },
+  {
+    href: "/agro-e-negocios-rurais/producao-vegetal/cogumelos",
+    label: "Cogumelos",
+  },
+  {
+    href: "/agro-e-negocios-rurais/producao-vegetal/plantas-medicinais",
+    label: "Plantas Medicinais",
+  },
+];
 
 function ProducaoVegetalPage() {
-  return (
-    <div>
-      <h1>Produção Vegetal</h1>
-      <ul>
-        <li>
-          <Link href="/agro-e-negocios-rurais/producao-vegetal/hortalicas">
-            Hortaliças
-          </Link>
-        </li>
-        <li>
-          <Link href="/agro-e-negocios-rurais/producao-vegetal/morango">
-            Morango
-          </Link>
-        </li>
-        <li>
-          <Link href="/agro-e-negocios-rurais/producao-vegetal/alface">
-            Alface
-          </Link>
-        </li>
-        <li>
-          <Link href="/agro-e-negocios-rurais/producao-vegetal/microverdes">
-            Microverdes
-          </Link>
-        </li>
-        <li>
-          <Link href="/agro-e-negocios-rurais/producao-vegetal/cogumelos">
-            Cogumelos
-          </Link>
-        </li>
-        <li>
-          <Link href="/agro-e-negocios-rurais/producao-vegetal/plantas-medicinais">
-            Plantas Medicinais
-          </Link>
-        </li>
-      </ul>
-    </div>
-  );
+  return <HubPage title="Produção Vegetal" links={links} />;
 }
 
 export default ProducaoVegetalPage;

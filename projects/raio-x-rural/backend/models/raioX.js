@@ -1,4 +1,4 @@
-import projectData from "projects/raio-x-rural/backend/data/dados.json";
+import projectData from "@/projects/raio-x-rural/backend/data/dados.json";
 
 function text(value) {
   return typeof value === "string" ? value : "";

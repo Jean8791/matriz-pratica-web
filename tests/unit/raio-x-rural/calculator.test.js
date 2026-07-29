@@ -1,4 +1,4 @@
-import { calculateMinimumPrice } from "projects/raio-x-rural/frontend/lib/calculator.js";
+import { calculateMinimumPrice } from "@/projects/raio-x-rural/frontend/lib/calculator.js";
 
 function alfaceForm() {
   return {

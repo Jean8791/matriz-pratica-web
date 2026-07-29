@@ -1,7 +1,10 @@
-import {useEffect, useMemo, useState} from "react";
-import {calculateMinimumPrice, isUnitBasedAnimalLot,} from "projects/raio-x-rural/frontend/lib/calculator.js";
-import {version} from "package.json";
-import styles from "projects/raio-x-rural/frontend/styles/RaioX.module.css";
+import { useEffect, useMemo, useState } from "react";
+import {
+  calculateMinimumPrice,
+  isUnitBasedAnimalLot,
+} from "@/projects/raio-x-rural/frontend/lib/calculator.js";
+import { version } from "package.json";
+import styles from "@/projects/raio-x-rural/frontend/styles/RaioX.module.css";
 
 function cx(...classNames) {
   return classNames
@@ -188,7 +191,7 @@ function formatPercent(value) {
   }).format(value);
 }
 
-function Field({label, help, required, children, className = ""}) {
+function Field({ label, help, required, children, className = "" }) {
   return (
     <label className={cx("field", className)}>
       <span className={cx("field-label")}>
@@ -201,7 +204,7 @@ function Field({label, help, required, children, className = ""}) {
   );
 }
 
-function ResultMetric({label, value, emphasis = false, detail}) {
+function ResultMetric({ label, value, emphasis = false, detail }) {
   return (
     <div className={cx("result-metric", emphasis && "result-metric-emphasis")}>
       <span>{label}</span>
@@ -211,7 +214,7 @@ function ResultMetric({label, value, emphasis = false, detail}) {
   );
 }
 
-function ProductNote({preset}) {
+function ProductNote({ preset }) {
   if (!preset) return null;
   return (
     <div className={cx("preset-note")}>
@@ -231,7 +234,7 @@ function ProductNote({preset}) {
   );
 }
 
-export function CalculatorApp({products, checklist}) {
+export function CalculatorApp({ products, checklist }) {
   const [form, setForm] = useState(() => cloneExample("Vegetal"));
   const [hydrated, setHydrated] = useState(false);
   const [copyState, setCopyState] = useState("idle");
@@ -244,7 +247,7 @@ export function CalculatorApp({products, checklist}) {
           setForm((current) => ({
             ...current,
             ...parsed,
-            costs: {...current.costs, ...(parsed.costs ?? {})},
+            costs: { ...current.costs, ...(parsed.costs ?? {}) },
             checkedCosts: Array.isArray(parsed.checkedCosts)
               ? parsed.checkedCosts
               : current.checkedCosts,
@@ -334,13 +337,13 @@ Podemos ajustar essa condição?`;
   ]);
 
   function update(key, value) {
-    setForm((current) => ({...current, [key]: value}));
+    setForm((current) => ({ ...current, [key]: value }));
   }
 
   function updateCost(key, value) {
     setForm((current) => ({
       ...current,
-      costs: {...current.costs, [key]: value},
+      costs: { ...current.costs, [key]: value },
     }));
   }
 
@@ -658,7 +661,7 @@ Podemos ajustar essa condição?`;
                 </Field>
               </div>
 
-              <ProductNote preset={selectedPreset}/>
+              <ProductNote preset={selectedPreset} />
             </section>
 
             <section className={cx("card")} aria-labelledby="dados-producao">
@@ -1041,9 +1044,9 @@ Podemos ajustar essa condição?`;
 
               <div className={cx("traffic-light")}>
                 <div className={cx("traffic-light-icon")} aria-hidden="true">
-                  <span className={cx("light red")}/>
-                  <span className={cx("light yellow")}/>
-                  <span className={cx("light green")}/>
+                  <span className={cx("light red")} />
+                  <span className={cx("light yellow")} />
+                  <span className={cx("light green")} />
                 </div>
                 <div>
                   <span>Semáforo</span>
@@ -1161,8 +1164,8 @@ Podemos ajustar essa condição?`;
 
       <footer>
         <p>
-          ® Mini Raio-X do Preço Mínimo Versão {version}· Revise os dados sempre que custos,
-          produção, perdas, canal ou cotação mudarem.
+          ® Mini Raio-X do Preço Mínimo Versão {version}· Revise os dados sempre
+          que custos, produção, perdas, canal ou cotação mudarem.
         </p>
       </footer>
     </div>

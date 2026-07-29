@@ -1,34 +1,24 @@
-import Link from "next/link";
+import HubPage from "@/shared/components/HubPage.js";
+
+const links = [
+  {
+    href: "/agro-e-negocios-rurais/producao-animal/leite-e-derivados",
+    label: "Leite e Derivados",
+  },
+  { href: "/agro-e-negocios-rurais/producao-animal/ovos", label: "Ovos" },
+  { href: "/agro-e-negocios-rurais/producao-animal/mel", label: "Mel" },
+  {
+    href: "/agro-e-negocios-rurais/producao-animal/tilapias",
+    label: "Tilápias",
+  },
+  {
+    href: "/agro-e-negocios-rurais/producao-animal/ovinos",
+    label: "Ovinos",
+  },
+];
 
 function ProducaoAnimalPage() {
-  return (
-    <div>
-      <h1>Produção Animal</h1>
-      <ul>
-        <li>
-          <Link href="/agro-e-negocios-rurais/producao-animal/leite-e-derivados">
-            Leite e Derivados
-          </Link>
-        </li>
-        <li>
-          <Link href="/agro-e-negocios-rurais/producao-animal/ovos">Ovos</Link>
-        </li>
-        <li>
-          <Link href="/agro-e-negocios-rurais/producao-animal/mel">Mel</Link>
-        </li>
-        <li>
-          <Link href="/agro-e-negocios-rurais/producao-animal/tilapias">
-            Tilápias
-          </Link>
-        </li>
-        <li>
-          <Link href="/agro-e-negocios-rurais/producao-animal/ovinos">
-            Ovinos
-          </Link>
-        </li>
-      </ul>
-    </div>
-  );
+  return <HubPage title="Produção Animal" links={links} />;
 }
 
 export default ProducaoAnimalPage;

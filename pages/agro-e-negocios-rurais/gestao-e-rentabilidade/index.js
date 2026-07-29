@@ -1,26 +1,22 @@
-import Link from "next/link";
+import HubPage from "@/shared/components/HubPage.js";
+
+const links = [
+  {
+    href: "/agro-e-negocios-rurais/gestao-e-rentabilidade/raio-x-rural",
+    label: "Raio X Rural",
+  },
+  {
+    href: "/agro-e-negocios-rurais/gestao-e-rentabilidade/agrocaderno",
+    label: "AgroCaderno",
+  },
+  {
+    href: "/agro-e-negocios-rurais/gestao-e-rentabilidade/propriedade-no-lucro",
+    label: "Propriedade no Lucro",
+  },
+];
 
 function GestaoERentabilidadePage() {
-  return (
-    <div>
-      <h1>Gestão e Rentabilidade</h1>
-      <ul>
-        <li>
-          <Link href="/raio-x-rural">Raio X Rural</Link>
-        </li>
-        <li>
-          <Link href="/agro-e-negocios-rurais/gestao-e-rentabilidade/agrocaderno">
-            AgroCaderno
-          </Link>
-        </li>
-        <li>
-          <Link href="/agro-e-negocios-rurais/gestao-e-rentabilidade/propriedade-no-lucro">
-            Propriedade no Lucro
-          </Link>
-        </li>
-      </ul>
-    </div>
-  );
+  return <HubPage title="Gestão e Rentabilidade" links={links} />;
 }
 
 export default GestaoERentabilidadePage;

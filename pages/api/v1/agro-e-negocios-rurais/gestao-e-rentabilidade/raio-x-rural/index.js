@@ -1,4 +1,4 @@
-import raioX from "projects/raio-x-rural/backend/models/raioX.js";
+import raioX from "@/projects/raio-x-rural/backend/models/raioX.js";
 
 async function handler(request, response) {
   const data = raioX.getCalculatorData();

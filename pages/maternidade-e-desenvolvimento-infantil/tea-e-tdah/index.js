@@ -1,33 +1,26 @@
-import Link from "next/link";
+import HubPage from "@/shared/components/HubPage.js";
+
+const links = [
+  {
+    href: "/maternidade-e-desenvolvimento-infantil/tea-e-tdah/rotinas-visuais",
+    label: "Rotinas Visuais",
+  },
+  {
+    href: "/maternidade-e-desenvolvimento-infantil/tea-e-tdah/transicoes",
+    label: "Transições",
+  },
+  {
+    href: "/maternidade-e-desenvolvimento-infantil/tea-e-tdah/organizacao-escolar",
+    label: "Organização Escolar",
+  },
+  {
+    href: "/maternidade-e-desenvolvimento-infantil/tea-e-tdah/comunicacao-familia-escola",
+    label: "Comunicação Família-Escola",
+  },
+];
 
 function TeaETdahPage() {
-  return (
-    <div>
-      <h1>TEA e TDAH</h1>
-      <ul>
-        <li>
-          <Link href="/maternidade-e-desenvolvimento-infantil/tea-e-tdah/rotinas-visuais">
-            Rotinas Visuais
-          </Link>
-        </li>
-        <li>
-          <Link href="/maternidade-e-desenvolvimento-infantil/tea-e-tdah/transicoes">
-            Transições
-          </Link>
-        </li>
-        <li>
-          <Link href="/maternidade-e-desenvolvimento-infantil/tea-e-tdah/organizacao-escolar">
-            Organização Escolar
-          </Link>
-        </li>
-        <li>
-          <Link href="/maternidade-e-desenvolvimento-infantil/tea-e-tdah/comunicacao-familia-escola">
-            Comunicação Família-Escola
-          </Link>
-        </li>
-      </ul>
-    </div>
-  );
+  return <HubPage title="TEA e TDAH" links={links} />;
 }
 
 export default TeaETdahPage;
