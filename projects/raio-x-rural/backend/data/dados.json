@@ -1,0 +1,3815 @@
+{
+  "source_file": "mini_raio_x_preco_minimo_V1_QA.xlsx",
+  "conversion": {
+    "blank_cells": "null",
+    "sheet_representation": "2D matrix preserving the worksheet layout",
+    "formulas": "stored separately by A1 cell address",
+    "dates": "ISO 8601 where a date-formatted cell was identified"
+  },
+  "sheet_order": [
+    "01_CALCULADORA",
+    "02_BASE_UNIDADES",
+    "03_SIMULACOES",
+    "04_CHECKLIST_CUSTOS",
+    "05_ESPECIFICACAO",
+    "06_FONTES_ORIENTACAO",
+    "07_LOGICA_DIDATICA",
+    "00_COMECE_AQUI",
+    "08_MODELO_NEGOCIACAO"
+  ],
+  "sheets": {
+    "01_CALCULADORA": {
+      "range": "A1:H53",
+      "dimensions": {
+        "rows": 53,
+        "columns": 8
+      },
+      "data": [
+        [
+          "Mini Raio-X do Preço Mínimo — Produção Vegetal e Animal",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Preencha os campos amarelos. As células verdes são automáticas. A unidade comercial deve refletir como o produtor realmente vende.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "1) DADOS GERAIS",
+          null,
+          null,
+          null,
+          "RESULTADO AUTOMÁTICO",
+          null,
+          null,
+          null
+        ],
+        [
+          "Módulo",
+          "Vegetal",
+          "Vegetal / Animal",
+          null,
+          "Produção vendável comercial",
+          44,
+          "unid. comercial",
+          null
+        ],
+        [
+          "Produto ou atividade",
+          "Alface",
+          "Ex.: Alface, Leite, Ovos, Tomate",
+          null,
+          "Custo base",
+          2316,
+          "R$",
+          null
+        ],
+        [
+          "Estado / região",
+          "Brasil",
+          "Texto livre",
+          null,
+          "Reserva",
+          231.6,
+          "R$",
+          null
+        ],
+        [
+          "Canal de venda",
+          "Feira / venda local",
+          "Feira, atravessador, mercado, cooperativa, PAA/PNAE",
+          null,
+          "Custo total",
+          2547.6,
+          "R$",
+          null
+        ],
+        [
+          "Unidade comercial de venda",
+          "caixa",
+          "kg, caixa, saca, cabeça, maço, dúzia, litro, arroba, unidade, tonelada",
+          null,
+          "Preço mínimo",
+          57.9,
+          "R$/unid. comercial",
+          null
+        ],
+        [
+          "Quantidade por unidade comercial",
+          20,
+          "Ex.: caixa 20 pés; saca 60 kg; dúzia 12 ovos; arroba 15 kg",
+          null,
+          "Preço alvo com margem",
+          69.48,
+          "R$/unid. comercial",
+          null
+        ],
+        [
+          "Unidade técnica de produção",
+          "cabeça",
+          "kg, cabeça, litro, ovo, maço, unidade etc.",
+          null,
+          "Receita esperada",
+          3080,
+          "R$",
+          null
+        ],
+        [
+          "Preço líquido esperado",
+          70,
+          "R$/unidade comercial",
+          null,
+          "Resultado estimado",
+          532.4,
+          "R$",
+          null
+        ],
+        [
+          "Margem de segurança desejada",
+          0.2,
+          "% acima do preço mínimo",
+          null,
+          "Margem de segurança real",
+          0.208981001727,
+          "%",
+          null
+        ],
+        [
+          "Reserva para imprevistos",
+          0.1,
+          "% sobre custo base",
+          null,
+          "Semáforo",
+          "🟢 Verde",
+          null,
+          null
+        ],
+        [
+          "Fonte da cotação",
+          "Preço local / comprador",
+          "Texto ou URL",
+          null,
+          "Mensagem",
+          "Preço acima do mínimo com margem de segurança.",
+          null,
+          null
+        ],
+        [
+          "Data da cotação",
+          "2026-07-11",
+          "Data",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          "SUGESTÃO DA BASE — editável pelo usuário nos campos amarelos",
+          null,
+          null,
+          null
+        ],
+        [
+          "2) PRODUÇÃO VEGETAL — use quando o módulo for Vegetal",
+          null,
+          null,
+          null,
+          "Unidade comercial sugerida",
+          "caixa",
+          "Quantidade padrão",
+          20
+        ],
+        [
+          "Área planejada",
+          1000,
+          "m² ou ha",
+          null,
+          "Unidade técnica sugerida",
+          "cabeça",
+          "Categoria",
+          "Folhosa"
+        ],
+        [
+          "Produtividade bruta esperada",
+          null,
+          "unidade técnica por área",
+          null,
+          "Fonte/observação",
+          "Pode ser cabeça/pé, caixa 12/18/20/24/32/36 ou kg conforme praça.",
+          null,
+          null
+        ],
+        [
+          "Produção bruta informada",
+          1000,
+          "use se não calcular por área",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Perda esperada",
+          0.12,
+          "%",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Produção bruta técnica",
+          1000,
+          "automático",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Produção vendável técnica",
+          880,
+          "automático",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Produção vendável comercial",
+          44,
+          "automático",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "3) PRODUÇÃO ANIMAL — use quando o módulo for Animal",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Tipo de produção",
+          "Contínua",
+          "Contínua ou Lote",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Nº de animais, matrizes ou colmeias",
+          null,
+          "cabeças, aves, colmeias",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Produção média por animal/dia",
+          null,
+          "litro/dia, ovo/dia; use só em produção contínua",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Dias do período ou ciclo",
+          null,
+          "dias",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Peso médio de venda",
+          null,
+          "kg/animal; use só em lote",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Mortalidade, descarte ou perda",
+          null,
+          "%",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Produção vendável técnica",
+          null,
+          "automático",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Produção vendável comercial",
+          null,
+          "automático",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "4) CUSTOS DO CICLO/PERÍODO",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Insumos / alimentação",
+          950,
+          "R$",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Mudas, sementes ou aquisição de animais",
+          0,
+          "R$",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Mão de obra",
+          600,
+          "R$",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Energia, água e combustível",
+          120,
+          "R$",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Sanidade / defensivos / medicamentos",
+          0,
+          "R$",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Serviços, preparo, manejo ou mecanização",
+          0,
+          "R$",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Estrutura, aluguel, depreciação ou rateio",
+          200,
+          "R$",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Embalagem, beneficiamento ou processamento",
+          176,
+          "R$ total",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Frete, comissão e taxas",
+          220,
+          "R$ total",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Outros custos",
+          50,
+          "R$",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Custo variável por unidade comercial",
+          0,
+          "R$/unid. comercial",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Custo base",
+          2316,
+          "automático",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Custo total",
+          2547.6,
+          "automático",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "formulas": {
+        "F5": "=IF($B$5=\"Vegetal\",$B$25,IF($B$5=\"Animal\",$B$36,0))",
+        "F6": "=IF($B$52=\"\",\"\",$B$52)",
+        "F7": "=IF(OR($F$6=\"\",NOT(ISNUMBER($B$14)),$B$14<0,$B$14>0.5),\"\",$F$6*$B$14)",
+        "F8": "=IF($B$53=\"\",\"\",$B$53)",
+        "F9": "=IF(OR($F$5<=0,$F$8=\"\",$F$8<=0),\"\",$F$8/$F$5)",
+        "F10": "=IF(OR($F$9=\"\",NOT(ISNUMBER($B$13)),$B$13<0),\"\",$F$9*(1+$B$13))",
+        "F11": "=IF(OR($F$5<=0,NOT(ISNUMBER($B$12)),$B$12<=0),\"\",$F$5*$B$12)",
+        "F12": "=IF(OR($F$11=\"\",$F$8=\"\"),\"\",$F$11-$F$8)",
+        "F13": "=IF(OR(NOT(ISNUMBER($B$12)),$B$12<=0,$F$9=\"\",$F$9<=0),\"\",$B$12/$F$9-1)",
+        "F14": "=IF(OR($F$5<=0,$F$8=\"\",$F$9=\"\",NOT(ISNUMBER($B$12)),$B$12<=0),\"⚪ Preencher\",IF($B$12<$F$9,\"🔴 Vermelho\",IF($B$12<$F$10,\"🟡 Amarelo\",\"🟢 Verde\")))",
+        "F15": "=IF(OR($F$5<=0,$F$8=\"\",$F$9=\"\",NOT(ISNUMBER($B$12)),$B$12<=0),\"Complete os dados obrigatórios antes de decidir.\",IF($B$12<$F$9,\"Venda ou produção com risco de prejuízo.\",IF($B$12<$F$10,\"Cobre o custo, mas a folga é baixa.\",\"Preço acima do mínimo com margem de segurança.\")))",
+        "F18": "=IFERROR(INDEX('02_BASE_UNIDADES'!$E:$E,MATCH($B$6,'02_BASE_UNIDADES'!$C:$C,0)),\"\")",
+        "H18": "=IFERROR(INDEX('02_BASE_UNIDADES'!$F:$F,MATCH($B$6,'02_BASE_UNIDADES'!$C:$C,0)),\"\")",
+        "F19": "=IFERROR(INDEX('02_BASE_UNIDADES'!$D:$D,MATCH($B$6,'02_BASE_UNIDADES'!$C:$C,0)),\"\")",
+        "H19": "=IFERROR(INDEX('02_BASE_UNIDADES'!$B:$B,MATCH($B$6,'02_BASE_UNIDADES'!$C:$C,0)),\"\")",
+        "F20": "=IFERROR(INDEX('02_BASE_UNIDADES'!$K:$K,MATCH($B$6,'02_BASE_UNIDADES'!$C:$C,0)),\"\")",
+        "B23": "=IF($B$5<>\"Vegetal\",\"\",IF(AND(ISNUMBER($B$21),$B$21>0),$B$21,IF(AND(ISNUMBER($B$19),$B$19>0,ISNUMBER($B$20),$B$20>0),$B$19*$B$20,\"\")))",
+        "B24": "=IF(OR($B$5<>\"Vegetal\",$B$23=\"\",NOT(ISNUMBER($B$22)),$B$22<0,$B$22>0.8),\"\",$B$23*(1-$B$22))",
+        "B25": "=IF(OR($B$5<>\"Vegetal\",$B$24<=0,NOT(ISNUMBER($B$10)),$B$10<=0),\"\",$B$24/$B$10)",
+        "B35": "=IF($B$5<>\"Animal\",\"\",IF($B$29=\"Contínua\",IF(AND(ISNUMBER($B$30),$B$30>0,ISNUMBER($B$31),$B$31>0,ISNUMBER($B$32),$B$32>0,ISNUMBER($B$34),$B$34>=0,$B$34<=1),$B$30*$B$31*$B$32*(1-$B$34),\"\"),IF($B$29=\"Lote\",IF(AND(ISNUMBER($B$30),$B$30>0,ISNUMBER($B$33),$B$33>0,ISNUMBER($B$34),$B$34>=0,$B$34<=1),$B$30*(1-$B$34)*$B$33,\"\"),\"\")))",
+        "B36": "=IF(OR($B$5<>\"Animal\",$B$35<=0,NOT(ISNUMBER($B$10)),$B$10<=0),\"\",$B$35/$B$10)",
+        "B52": "=IF(OR($F$5<=0,COUNTIF($B$41:$B$51,\"<0\")>0,SUM($B$41:$B$50)+($B$51*$F$5)<=0),\"\",SUM($B$41:$B$50)+($B$51*$F$5))",
+        "B53": "=IF(OR($B$52=\"\",NOT(ISNUMBER($B$14)),$B$14<0,$B$14>0.5),\"\",$B$52*(1+$B$14))"
+      },
+      "date_cells": {
+        "B16": {
+          "value": "2026-07-11",
+          "excel_serial": 46214
+        }
+      }
+    },
+    "02_BASE_UNIDADES": {
+      "range": "A1:L76",
+      "dimensions": {
+        "rows": 76,
+        "columns": 12
+      },
+      "data": [
+        [
+          "Módulo",
+          "Categoria",
+          "Produto/Atividade",
+          "Unidade técnica",
+          "Unidade comercial sugerida",
+          "Quantidade padrão",
+          "Unidade de conversão",
+          "Unidade para preço mínimo",
+          "Tipo de produção animal",
+          "Editável?",
+          "Observação",
+          "Fonte"
+        ],
+        [
+          "Vegetal",
+          "Grão",
+          "Milho grão",
+          "kg",
+          "saca",
+          60,
+          "kg",
+          "R$/saca",
+          null,
+          "Sim",
+          "Padrão nacional de saca 60 kg; pode variar no contrato.",
+          "https://cepea.org.br/"
+        ],
+        [
+          "Vegetal",
+          "Grão",
+          "Feijão",
+          "kg",
+          "saca",
+          60,
+          "kg",
+          "R$/saca",
+          null,
+          "Sim",
+          "Usar preço líquido recebido; considerar frete e classificação.",
+          "https://cepea.org.br/"
+        ],
+        [
+          "Vegetal",
+          "Grão",
+          "Arroz em casca",
+          "kg",
+          "saca",
+          50,
+          "kg",
+          "R$/saca",
+          null,
+          "Sim",
+          "Arroz em casca geralmente referenciado em saca 50 kg.",
+          "https://cepea.org.br/"
+        ],
+        [
+          "Vegetal",
+          "Grão",
+          "Café",
+          "kg",
+          "saca",
+          60,
+          "kg",
+          "R$/saca",
+          null,
+          "Sim",
+          "Café geralmente em saca 60 kg; qualidade altera preço.",
+          "https://cepea.org.br/"
+        ],
+        [
+          "Vegetal",
+          "Raiz/agroindústria",
+          "Mandioca indústria",
+          "kg",
+          "tonelada",
+          1000,
+          "kg",
+          "R$/tonelada",
+          null,
+          "Sim",
+          "Raiz posta na indústria/fecularia normalmente em tonelada.",
+          "https://cepea.org.br/"
+        ],
+        [
+          "Vegetal",
+          "Raiz/mesa",
+          "Mandioca de mesa",
+          "kg",
+          "caixa",
+          20,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Caixa ou kg varia por praça; ajustar peso real.",
+          "https://ceagesp.gov.br/wp-content/uploads/2021/01/medidaHortalicas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Agroindústria",
+          "Cana-de-açúcar",
+          "kg",
+          "tonelada",
+          1000,
+          "kg",
+          "R$/tonelada",
+          null,
+          "Sim",
+          "Usar preço líquido por tonelada entregue.",
+          "https://portaldeinformacoes.conab.gov.br/"
+        ],
+        [
+          "Vegetal",
+          "Grão",
+          "Amendoim",
+          "kg",
+          "saca",
+          25,
+          "kg",
+          "R$/saca",
+          null,
+          "Sim",
+          "Saca pode variar; ajustar conforme comprador.",
+          "https://portaldeinformacoes.conab.gov.br/"
+        ],
+        [
+          "Vegetal",
+          "Grão",
+          "Trigo",
+          "kg",
+          "saca",
+          60,
+          "kg",
+          "R$/saca",
+          null,
+          "Sim",
+          "Saca 60 kg como referência comum.",
+          "https://cepea.org.br/"
+        ],
+        [
+          "Vegetal",
+          "Grão",
+          "Soja",
+          "kg",
+          "saca",
+          60,
+          "kg",
+          "R$/saca",
+          null,
+          "Sim",
+          "Saca 60 kg como referência comum.",
+          "https://cepea.org.br/"
+        ],
+        [
+          "Vegetal",
+          "Grão",
+          "Sorgo",
+          "kg",
+          "saca",
+          60,
+          "kg",
+          "R$/saca",
+          null,
+          "Sim",
+          "Saca 60 kg como referência comum.",
+          "https://portaldeinformacoes.conab.gov.br/precos-agropecuarios.html"
+        ],
+        [
+          "Vegetal",
+          "Folhosa",
+          "Alface",
+          "cabeça",
+          "caixa",
+          20,
+          "cabeças",
+          "R$/caixa ou R$/cabeça",
+          null,
+          "Sim",
+          "Pode ser cabeça/pé, caixa 12/18/20/24/32/36 ou kg conforme praça.",
+          "https://ceagesp.gov.br/wp-content/uploads/2021/01/medidaHortalicas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Folhosa",
+          "Couve-manteiga",
+          "maço",
+          "caixa",
+          24,
+          "maços",
+          "R$/maço",
+          null,
+          "Sim",
+          "Comum em maço; caixa deve ser convertida para maços.",
+          "https://ceagesp.gov.br/wp-content/uploads/2021/01/medidaHortalicas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Folhosa",
+          "Rúcula",
+          "maço",
+          "maço",
+          1,
+          "maço",
+          "R$/maço",
+          null,
+          "Sim",
+          "Pode ser maço ou unidade hidropônica; ajustar canal.",
+          "https://ceagesp.gov.br/cotacoes/"
+        ],
+        [
+          "Vegetal",
+          "Folhosa",
+          "Agrião",
+          "maço",
+          "maço",
+          1,
+          "maço",
+          "R$/maço",
+          null,
+          "Sim",
+          "Maço é referência prática para pequeno produtor.",
+          "https://ceagesp.gov.br/cotacoes/"
+        ],
+        [
+          "Vegetal",
+          "Folhosa",
+          "Cheiro-verde",
+          "maço",
+          "maço",
+          1,
+          "maço",
+          "R$/maço",
+          null,
+          "Sim",
+          "Maço varia por região; usar padrão do comprador.",
+          "https://ceagesp.gov.br/cotacoes/"
+        ],
+        [
+          "Vegetal",
+          "Folhosa",
+          "Coentro",
+          "maço",
+          "maço",
+          1,
+          "maço",
+          "R$/maço",
+          null,
+          "Sim",
+          "Maço varia por região; usar padrão do comprador.",
+          "https://ceagesp.gov.br/cotacoes/"
+        ],
+        [
+          "Vegetal",
+          "Folhosa",
+          "Salsa",
+          "maço",
+          "maço",
+          1,
+          "maço",
+          "R$/maço",
+          null,
+          "Sim",
+          "Maço varia por região; usar padrão do comprador.",
+          "https://ceagesp.gov.br/cotacoes/"
+        ],
+        [
+          "Vegetal",
+          "Folhosa",
+          "Almeirão",
+          "maço",
+          "maço",
+          1,
+          "maço",
+          "R$/maço",
+          null,
+          "Sim",
+          "Pode aparecer por tipo/embalagem em CEASA.",
+          "https://ceagesp.gov.br/wp-content/uploads/2021/01/medidaHortalicas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Folhosa",
+          "Espinafre",
+          "maço",
+          "maço",
+          1,
+          "maço",
+          "R$/maço",
+          null,
+          "Sim",
+          "Pode ser maço ou caixa com maços.",
+          "https://ceagesp.gov.br/wp-content/uploads/2021/01/medidaHortalicas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Folhosa",
+          "Chicória/Escarola",
+          "unidade",
+          "caixa",
+          24,
+          "unidades",
+          "R$/unidade",
+          null,
+          "Sim",
+          "Converter caixa para unidades conforme classificação.",
+          "https://ceagesp.gov.br/wp-content/uploads/2021/01/medidaHortalicas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Hortaliça fruto",
+          "Tomate",
+          "kg",
+          "caixa",
+          20,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Caixa 20 kg é referência comum em atacado.",
+          "https://ceagesp.gov.br/wp-content/uploads/2021/01/medidaHortalicas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Hortaliça bulbo",
+          "Cebola",
+          "kg",
+          "saco",
+          20,
+          "kg",
+          "R$/saco ou R$/kg",
+          null,
+          "Sim",
+          "Saco 20 kg como referência em CEAGESP.",
+          "https://ceagesp.gov.br/wp-content/uploads/2021/01/medidaHortalicas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Raiz",
+          "Cenoura",
+          "kg",
+          "saco/caixa",
+          20,
+          "kg",
+          "R$/saco ou R$/kg",
+          null,
+          "Sim",
+          "Papelão/saco 20 kg em referência de atacado.",
+          "https://ceagesp.gov.br/wp-content/uploads/2021/01/medidaHortalicas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Raiz",
+          "Beterraba",
+          "kg",
+          "caixa/saco",
+          20,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Ajustar peso real da embalagem local.",
+          "https://ceagesp.gov.br/wp-content/uploads/2021/01/medidaHortalicas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Tubérculo",
+          "Batata inglesa",
+          "kg",
+          "saco",
+          50,
+          "kg",
+          "R$/saco ou R$/kg",
+          null,
+          "Sim",
+          "Saco pode ser 25 ou 50 kg; editar conforme praça.",
+          "https://ceagesp.gov.br/cotacoes/"
+        ],
+        [
+          "Vegetal",
+          "Tubérculo",
+          "Batata-doce",
+          "kg",
+          "caixa/saco",
+          20,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Peso da embalagem varia; editar.",
+          "https://ceagesp.gov.br/cotacoes/"
+        ],
+        [
+          "Vegetal",
+          "Hortaliça fruto",
+          "Abóbora",
+          "kg",
+          "kg",
+          1,
+          "kg",
+          "R$/kg",
+          null,
+          "Sim",
+          "Frequentemente vendida por kg ou granel.",
+          "https://ceagesp.gov.br/cotacoes/"
+        ],
+        [
+          "Vegetal",
+          "Hortaliça fruto",
+          "Abobrinha",
+          "kg",
+          "caixa",
+          18,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Caixa 18 kg como referência CEAGESP.",
+          "https://ceagesp.gov.br/wp-content/uploads/2021/01/medidaHortalicas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Hortaliça fruto",
+          "Berinjela",
+          "kg",
+          "caixa",
+          10,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Caixa/papelão 10 kg em referência CEAGESP.",
+          "https://ceagesp.gov.br/wp-content/uploads/2021/01/medidaHortalicas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Hortaliça fruto",
+          "Pepino",
+          "kg",
+          "caixa",
+          20,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Caixa 20 kg como referência CEAGESP.",
+          "https://ceagesp.gov.br/wp-content/uploads/2021/01/medidaHortalicas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Hortaliça fruto",
+          "Pimentão",
+          "kg",
+          "caixa",
+          10,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Papelão 10 kg como referência CEAGESP.",
+          "https://ceagesp.gov.br/wp-content/uploads/2021/01/medidaHortalicas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Hortaliça fruto",
+          "Quiabo",
+          "kg",
+          "caixa",
+          15,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Caixa 15 kg como referência CEAGESP.",
+          "https://ceagesp.gov.br/wp-content/uploads/2021/01/medidaHortalicas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Hortaliça fruto",
+          "Vagem",
+          "kg",
+          "caixa",
+          15,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Caixa 15 kg como referência CEAGESP.",
+          "https://ceagesp.gov.br/wp-content/uploads/2021/01/medidaHortalicas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Hortaliça fruto",
+          "Chuchu",
+          "kg",
+          "caixa",
+          20,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Caixa 20 kg como referência prática.",
+          "https://ceagesp.gov.br/cotacoes/"
+        ],
+        [
+          "Vegetal",
+          "Hortaliça fruto",
+          "Jiló",
+          "kg",
+          "caixa",
+          15,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Editar peso conforme comprador.",
+          "https://ceagesp.gov.br/cotacoes/"
+        ],
+        [
+          "Vegetal",
+          "Hortaliça cabeça",
+          "Repolho",
+          "cabeça",
+          "caixa",
+          12,
+          "cabeças",
+          "R$/cabeça ou R$/caixa",
+          null,
+          "Sim",
+          "Converter caixa para cabeças; peso varia por classificação.",
+          "https://ceagesp.gov.br/wp-content/uploads/2021/01/medidaHortalicas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Hortaliça cabeça",
+          "Brócolis ninja",
+          "cabeça",
+          "caixa",
+          8,
+          "cabeças",
+          "R$/cabeça",
+          null,
+          "Sim",
+          "Pode variar por tipo 6/8/10 unidades.",
+          "https://ceagesp.gov.br/wp-content/uploads/2021/01/medidaHortalicas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Hortaliça maço",
+          "Brócolis ramoso",
+          "maço",
+          "caixa",
+          12,
+          "maços",
+          "R$/maço",
+          null,
+          "Sim",
+          "Converter caixa para maços.",
+          "https://ceagesp.gov.br/wp-content/uploads/2021/01/medidaHortalicas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Hortaliça cabeça",
+          "Couve-flor",
+          "cabeça",
+          "caixa",
+          8,
+          "cabeças",
+          "R$/cabeça",
+          null,
+          "Sim",
+          "Pode variar por classificação 6/8/10.",
+          "https://ceagesp.gov.br/wp-content/uploads/2021/01/medidaHortalicas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Espiga",
+          "Milho verde",
+          "espiga",
+          "saco",
+          50,
+          "espigas",
+          "R$/espiga ou R$/saco",
+          null,
+          "Sim",
+          "Saco pode ser por peso ou número de espigas; editar.",
+          "https://ceagesp.gov.br/wp-content/uploads/2021/01/medidaHortalicas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Raiz/tubérculo",
+          "Inhame/Taro",
+          "kg",
+          "caixa",
+          18,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Editar peso local da caixa.",
+          "https://ceagesp.gov.br/wp-content/uploads/2021/01/medidaHortalicas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Raiz/tubérculo",
+          "Cará",
+          "kg",
+          "caixa",
+          20,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Editar peso local da caixa.",
+          "https://ceagesp.gov.br/wp-content/uploads/2021/01/medidaHortalicas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Raiz/tubérculo",
+          "Mandioquinha",
+          "kg",
+          "caixa",
+          17,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Editar conforme praça.",
+          "https://ceagesp.gov.br/wp-content/uploads/2021/01/medidaHortalicas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Fruta",
+          "Banana",
+          "kg",
+          "caixa",
+          20,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Caixa 20 kg como referência CEAGESP.",
+          "https://ceagesp.gov.br/wp-content/uploads/2015/06/medidaFrutas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Fruta",
+          "Abacaxi",
+          "unidade",
+          "unidade",
+          1,
+          "unidade",
+          "R$/unidade",
+          null,
+          "Sim",
+          "Pode ser unidade ou caixa por quantidade; usar unidade facilita.",
+          "https://ceagesp.gov.br/wp-content/uploads/2015/06/medidaFrutas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Fruta",
+          "Laranja",
+          "kg",
+          "caixa",
+          25,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Caixa 25 kg como referência de atacado.",
+          "https://ceagesp.gov.br/wp-content/uploads/2015/06/medidaFrutas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Fruta",
+          "Limão Tahiti",
+          "kg",
+          "caixa",
+          25,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Peso pode variar 20 ou 25 kg; editar.",
+          "https://ceagesp.gov.br/wp-content/uploads/2015/06/medidaFrutas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Fruta",
+          "Mamão Formosa",
+          "kg",
+          "caixa",
+          10,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Caixa 10 kg como referência.",
+          "https://ceagesp.gov.br/wp-content/uploads/2015/06/medidaFrutas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Fruta",
+          "Mamão Havaí",
+          "kg",
+          "caixa",
+          8,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Caixa 8 kg como referência.",
+          "https://ceagesp.gov.br/wp-content/uploads/2015/06/medidaFrutas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Fruta",
+          "Manga",
+          "kg",
+          "caixa",
+          6,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Caixa 6 kg como referência.",
+          "https://ceagesp.gov.br/wp-content/uploads/2015/06/medidaFrutas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Fruta",
+          "Maracujá",
+          "kg",
+          "caixa",
+          13,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Caixa 13 kg como referência.",
+          "https://ceagesp.gov.br/wp-content/uploads/2015/06/medidaFrutas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Fruta",
+          "Melancia",
+          "kg",
+          "kg",
+          1,
+          "kg",
+          "R$/kg",
+          null,
+          "Sim",
+          "Geralmente granel/kg; unidade exige peso médio.",
+          "https://ceagesp.gov.br/wp-content/uploads/2015/06/medidaFrutas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Fruta",
+          "Melão",
+          "kg",
+          "caixa",
+          13,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Caixa 13 kg como referência.",
+          "https://ceagesp.gov.br/wp-content/uploads/2015/06/medidaFrutas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Fruta",
+          "Goiaba",
+          "kg",
+          "caixa",
+          2,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Peso varia por embalagem; editar.",
+          "https://ceagesp.gov.br/wp-content/uploads/2015/06/medidaFrutas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Fruta",
+          "Coco verde",
+          "unidade",
+          "unidade",
+          1,
+          "unidade",
+          "R$/unidade",
+          null,
+          "Sim",
+          "Comum por unidade.",
+          "https://ceagesp.gov.br/cotacoes/"
+        ],
+        [
+          "Vegetal",
+          "Fruta",
+          "Morango",
+          "bandeja",
+          "bandeja",
+          1,
+          "bandeja",
+          "R$/bandeja ou R$/kg",
+          null,
+          "Sim",
+          "Bandeja/cumbuca varia por peso; informar padrão do comprador.",
+          "https://ceagesp.gov.br/wp-content/uploads/2015/06/medidaFrutas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Fruta",
+          "Uva",
+          "kg",
+          "kg",
+          1,
+          "kg",
+          "R$/kg",
+          null,
+          "Sim",
+          "Pode ser caixa ou bandeja; ajustar conforme canal.",
+          "https://ceagesp.gov.br/wp-content/uploads/2015/06/medidaFrutas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Fruta",
+          "Acerola",
+          "kg",
+          "caixa",
+          1.2,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Peso de embalagem pode variar; editar.",
+          "https://ceagesp.gov.br/wp-content/uploads/2015/06/medidaFrutas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Fruta",
+          "Caju",
+          "kg",
+          "caixa",
+          1.2,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Peso de embalagem pode variar; editar.",
+          "https://ceagesp.gov.br/wp-content/uploads/2015/06/medidaFrutas.pdf"
+        ],
+        [
+          "Vegetal",
+          "Fruta",
+          "Abacate",
+          "kg",
+          "caixa",
+          20,
+          "kg",
+          "R$/caixa ou R$/kg",
+          null,
+          "Sim",
+          "Avocado pode usar caixa menor; editar.",
+          "https://ceagesp.gov.br/wp-content/uploads/2015/06/medidaFrutas.pdf"
+        ],
+        [
+          "Animal",
+          "Leite",
+          "Leite cru",
+          "litro",
+          "litro",
+          1,
+          "litro",
+          "R$/litro",
+          "Contínua",
+          "Sim",
+          "Produção diária por vaca x dias x perdas.",
+          "https://cepea.org.br/br/indicador/leite.aspx"
+        ],
+        [
+          "Animal",
+          "Ovos",
+          "Ovos",
+          "ovo",
+          "dúzia",
+          12,
+          "ovos",
+          "R$/dúzia",
+          "Contínua",
+          "Sim",
+          "Produção diária por ave; converter ovos para dúzia.",
+          "https://cepea.org.br/"
+        ],
+        [
+          "Animal",
+          "Aves",
+          "Frango caipira vivo",
+          "kg",
+          "kg",
+          1,
+          "kg vivo",
+          "R$/kg vivo",
+          "Lote",
+          "Sim",
+          "Também pode ser vendido por unidade; se for unidade, use peso médio convertido.",
+          "https://portaldeinformacoes.conab.gov.br/precos-agropecuarios.html"
+        ],
+        [
+          "Animal",
+          "Aves",
+          "Frango de corte",
+          "kg",
+          "kg",
+          1,
+          "kg vivo ou carcaça",
+          "R$/kg",
+          "Lote",
+          "Sim",
+          "Separar vivo/carcaça conforme comprador.",
+          "https://cepea.org.br/"
+        ],
+        [
+          "Animal",
+          "Aves",
+          "Galinha caipira",
+          "unidade",
+          "unidade",
+          1,
+          "unidade",
+          "R$/unidade",
+          "Lote",
+          "Sim",
+          "Se vender por kg, alterar unidade para kg.",
+          "https://portaldeinformacoes.conab.gov.br/precos-agropecuarios.html"
+        ],
+        [
+          "Animal",
+          "Suínos",
+          "Suíno vivo",
+          "kg",
+          "kg",
+          1,
+          "kg vivo",
+          "R$/kg vivo",
+          "Lote",
+          "Sim",
+          "CEPEA publica indicador de suíno vivo em R$/kg.",
+          "https://cepea.org.br/br/indicador/suino.aspx"
+        ],
+        [
+          "Animal",
+          "Suínos",
+          "Leitão",
+          "unidade",
+          "unidade",
+          1,
+          "unidade",
+          "R$/unidade",
+          "Lote",
+          "Sim",
+          "Pode ser unidade ou kg vivo; editar conforme venda.",
+          "https://portaldeinformacoes.conab.gov.br/precos-agropecuarios.html"
+        ],
+        [
+          "Animal",
+          "Bovinos",
+          "Bovino de corte",
+          "kg carcaça",
+          "arroba",
+          15,
+          "kg carcaça",
+          "R$/arroba",
+          "Lote",
+          "Sim",
+          "Arroba pecuária = 15 kg de carcaça; usar peso de carcaça estimado.",
+          "https://cepea.org.br/br/indicador/boi-gordo.aspx"
+        ],
+        [
+          "Animal",
+          "Bovinos",
+          "Bezerro",
+          "cabeça",
+          "cabeça",
+          1,
+          "cabeça",
+          "R$/cabeça",
+          "Lote",
+          "Sim",
+          "Preço por cabeça varia muito por peso/raça/região.",
+          "https://cepea.org.br/"
+        ],
+        [
+          "Animal",
+          "Ovinos",
+          "Cordeiro/Ovino",
+          "kg",
+          "kg",
+          1,
+          "kg vivo",
+          "R$/kg vivo",
+          "Lote",
+          "Sim",
+          "CEPEA publica cordeiro em R$/kg vivo.",
+          "https://cepea.org.br/br/indicador/cordeiro.aspx"
+        ],
+        [
+          "Animal",
+          "Caprinos",
+          "Cabrito/Caprino",
+          "kg",
+          "kg",
+          1,
+          "kg vivo",
+          "R$/kg vivo",
+          "Lote",
+          "Sim",
+          "Ajustar conforme comprador local.",
+          "https://portaldeinformacoes.conab.gov.br/precos-agropecuarios.html"
+        ],
+        [
+          "Animal",
+          "Piscicultura",
+          "Tilápia",
+          "kg",
+          "kg",
+          1,
+          "kg",
+          "R$/kg",
+          "Lote",
+          "Sim",
+          "CEPEA publica indicador de tilápia em R$/kg.",
+          "https://cepea.org.br/br/indicador/tilapia.aspx"
+        ],
+        [
+          "Animal",
+          "Piscicultura",
+          "Peixe redondo/Tambaqui",
+          "kg",
+          "kg",
+          1,
+          "kg",
+          "R$/kg",
+          "Lote",
+          "Sim",
+          "Usar peso final vendável e perdas.",
+          "https://portaldeinformacoes.conab.gov.br/precos-agropecuarios.html"
+        ],
+        [
+          "Animal",
+          "Apicultura",
+          "Mel",
+          "kg",
+          "kg",
+          1,
+          "kg",
+          "R$/kg",
+          "Contínua",
+          "Sim",
+          "Produção média por colmeia no período x perdas.",
+          "https://portaldeinformacoes.conab.gov.br/precos-agropecuarios.html"
+        ]
+      ],
+      "formulas": {}
+    },
+    "03_SIMULACOES": {
+      "range": "A1:M21",
+      "dimensions": {
+        "rows": 21,
+        "columns": 13
+      },
+      "data": [
+        [
+          "Exemplos didáticos preenchidos — vegetal e animal",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Valores são exemplos didáticos. Substitua por dados reais da propriedade, preço líquido recebido e canal de venda.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Módulo",
+          "Produto/atividade",
+          "Unidade",
+          "Produção vendável",
+          "Custo total",
+          "Preço líquido esperado",
+          "Margem desejada",
+          "Preço mínimo",
+          "Preço alvo",
+          "Receita",
+          "Resultado",
+          "Margem real",
+          "Semáforo"
+        ],
+        [
+          "Vegetal",
+          "Alface crespa",
+          "caixa 20 cabeças",
+          44,
+          2547.6,
+          70,
+          0.2,
+          57.9,
+          69.48,
+          3080,
+          532.4,
+          0.208981001727,
+          "🟢 Verde"
+        ],
+        [
+          "Animal",
+          "Leite cru",
+          "litro",
+          1176,
+          3045,
+          2.85,
+          0.2,
+          2.589285714286,
+          3.107142857143,
+          3351.6,
+          306.6,
+          0.100689655172,
+          "🟡 Amarelo"
+        ],
+        [
+          "Animal",
+          "Ovos",
+          "dúzia",
+          181.875,
+          1627.5,
+          8,
+          0.2,
+          8.948453608247,
+          10.738144329897,
+          1455,
+          -172.5,
+          -0.10599078341,
+          "🔴 Vermelho"
+        ],
+        [
+          "Vegetal",
+          "Milho grão",
+          "saca 60 kg",
+          100,
+          7500,
+          82,
+          0.15,
+          75,
+          86.25,
+          8200,
+          700,
+          0.093333333333,
+          "🟡 Amarelo"
+        ],
+        [
+          "Animal",
+          "Bovino de corte",
+          "arroba 15 kg",
+          120,
+          32400,
+          285,
+          0.1,
+          270,
+          297,
+          34200,
+          1800,
+          0.055555555556,
+          "🟡 Amarelo"
+        ],
+        [
+          "Exemplo preenchido validado — Alface em caixa com 20 cabeças",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Produção bruta",
+          1000,
+          "cabeças",
+          "entrada",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Perda esperada",
+          0.12,
+          "%",
+          "entrada",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Produção vendável técnica",
+          880,
+          "cabeças",
+          "1000 x (1-12%)",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Quantidade por caixa",
+          20,
+          "cabeças",
+          "entrada",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Caixas vendáveis",
+          44,
+          "caixas",
+          "880 / 20",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Custo base",
+          2316,
+          "R$",
+          "soma dos custos",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Reserva",
+          231.6,
+          "R$",
+          "10%",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Custo total",
+          2547.6,
+          "R$",
+          "custo base + reserva",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Preço mínimo",
+          57.9,
+          "R$/caixa",
+          "custo total / caixas",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Preço líquido esperado",
+          70,
+          "R$/caixa",
+          "entrada",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Resultado estimado",
+          532.4,
+          "R$",
+          "receita - custo total",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "formulas": {
+        "H5": "=IF(D5<=0,\"\",E5/D5)",
+        "I5": "=IF(H5=\"\",\"\",H5*(1+G5))",
+        "J5": "=D5*F5",
+        "K5": "=J5-E5",
+        "L5": "=IF(OR(F5<=0,H5=\"\"),\"\",F5/H5-1)",
+        "M5": "=IF(OR(D5<=0,H5=\"\",F5<=0),\"⚪ Preencher\",IF(F5<H5,\"🔴 Vermelho\",IF(F5<I5,\"🟡 Amarelo\",\"🟢 Verde\")))",
+        "H6": "=IF(D6<=0,\"\",E6/D6)",
+        "I6": "=IF(H6=\"\",\"\",H6*(1+G6))",
+        "J6": "=D6*F6",
+        "K6": "=J6-E6",
+        "L6": "=IF(OR(F6<=0,H6=\"\"),\"\",F6/H6-1)",
+        "M6": "=IF(OR(D6<=0,H6=\"\",F6<=0),\"⚪ Preencher\",IF(F6<H6,\"🔴 Vermelho\",IF(F6<I6,\"🟡 Amarelo\",\"🟢 Verde\")))",
+        "H7": "=IF(D7<=0,\"\",E7/D7)",
+        "I7": "=IF(H7=\"\",\"\",H7*(1+G7))",
+        "J7": "=D7*F7",
+        "K7": "=J7-E7",
+        "L7": "=IF(OR(F7<=0,H7=\"\"),\"\",F7/H7-1)",
+        "M7": "=IF(OR(D7<=0,H7=\"\",F7<=0),\"⚪ Preencher\",IF(F7<H7,\"🔴 Vermelho\",IF(F7<I7,\"🟡 Amarelo\",\"🟢 Verde\")))",
+        "H8": "=IF(D8<=0,\"\",E8/D8)",
+        "I8": "=IF(H8=\"\",\"\",H8*(1+G8))",
+        "J8": "=D8*F8",
+        "K8": "=J8-E8",
+        "L8": "=IF(OR(F8<=0,H8=\"\"),\"\",F8/H8-1)",
+        "M8": "=IF(OR(D8<=0,H8=\"\",F8<=0),\"⚪ Preencher\",IF(F8<H8,\"🔴 Vermelho\",IF(F8<I8,\"🟡 Amarelo\",\"🟢 Verde\")))",
+        "H9": "=IF(D9<=0,\"\",E9/D9)",
+        "I9": "=IF(H9=\"\",\"\",H9*(1+G9))",
+        "J9": "=D9*F9",
+        "K9": "=J9-E9",
+        "L9": "=IF(OR(F9<=0,H9=\"\"),\"\",F9/H9-1)",
+        "M9": "=IF(OR(D9<=0,H9=\"\",F9<=0),\"⚪ Preencher\",IF(F9<H9,\"🔴 Vermelho\",IF(F9<I9,\"🟡 Amarelo\",\"🟢 Verde\")))"
+      }
+    },
+    "04_CHECKLIST_CUSTOS": {
+      "range": "A1:D27",
+      "dimensions": {
+        "rows": 27,
+        "columns": 4
+      },
+      "data": [
+        [
+          "Checklist de custos — use antes de confiar no preço mínimo",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Módulo",
+          "Custo",
+          "Incluir?",
+          "Observação prática"
+        ],
+        [
+          "Vegetal",
+          "Sementes ou mudas",
+          "☐",
+          "Entrar pelo valor total do ciclo."
+        ],
+        [
+          "Vegetal",
+          "Adubo, calcário, composto ou substrato",
+          "☐",
+          "Inclua comprado e produzido na propriedade com custo estimado."
+        ],
+        [
+          "Vegetal",
+          "Defensivos, biológicos ou armadilhas",
+          "☐",
+          "Inclua tratamento preventivo e corretivo."
+        ],
+        [
+          "Vegetal",
+          "Irrigação, água e energia",
+          "☐",
+          "Pode entrar por ciclo ou rateio."
+        ],
+        [
+          "Vegetal",
+          "Preparo de solo, canteiro ou mecanização",
+          "☐",
+          "Terceirizado ou custo próprio rateado."
+        ],
+        [
+          "Vegetal",
+          "Mão de obra familiar ou contratada",
+          "☐",
+          "Não zerar mão de obra familiar."
+        ],
+        [
+          "Vegetal",
+          "Colheita, lavagem, seleção e classificação",
+          "☐",
+          "Inclua tempo e material usado."
+        ],
+        [
+          "Vegetal",
+          "Embalagem",
+          "☐",
+          "Caixa, saco, bandeja, elástico, rótulo."
+        ],
+        [
+          "Vegetal",
+          "Frete, comissão e taxas",
+          "☐",
+          "Use o valor líquido que realmente sobra."
+        ],
+        [
+          "Vegetal",
+          "Perdas esperadas",
+          "☐",
+          "Entrar como % de perda."
+        ],
+        [
+          "Vegetal",
+          "Rateio de estrutura, ferramentas e aluguel",
+          "☐",
+          "Usar rateio simples por ciclo/período."
+        ],
+        [
+          "Animal",
+          "Ração, milho, farelo, volumoso ou pastagem",
+          "☐",
+          "Maior custo em muitos sistemas."
+        ],
+        [
+          "Animal",
+          "Compra de animais, pintinhos, alevinos ou matrizes",
+          "☐",
+          "Entrar no ciclo ou rateio conforme caso."
+        ],
+        [
+          "Animal",
+          "Medicamentos, vacinas e vermífugos",
+          "☐",
+          "Não esquecer manejo sanitário."
+        ],
+        [
+          "Animal",
+          "Assistência técnica",
+          "☐",
+          "Incluir quando pago ou rateado."
+        ],
+        [
+          "Animal",
+          "Mão de obra",
+          "☐",
+          "Rotina diária também tem custo."
+        ],
+        [
+          "Animal",
+          "Energia, água e combustível",
+          "☐",
+          "Ordenha, bomba, refrigeração, transporte."
+        ],
+        [
+          "Animal",
+          "Cama, limpeza e manejo",
+          "☐",
+          "Maravalha, cal, limpeza, manutenção."
+        ],
+        [
+          "Animal",
+          "Ordenha, coleta, resfriamento ou armazenamento",
+          "☐",
+          "Especialmente leite e ovos."
+        ],
+        [
+          "Animal",
+          "Abate, processamento ou beneficiamento",
+          "☐",
+          "Quando vendido abatido/processado."
+        ],
+        [
+          "Animal",
+          "Embalagem",
+          "☐",
+          "Caixa de ovos, pote de mel, saco, rótulo."
+        ],
+        [
+          "Animal",
+          "Transporte, comissão, taxas e inspeção",
+          "☐",
+          "Usar preço líquido final."
+        ],
+        [
+          "Animal",
+          "Mortalidade, descarte ou quebra",
+          "☐",
+          "Entrar como % de perda."
+        ],
+        [
+          "Ambos",
+          "Reserva para imprevistos",
+          "☐",
+          "Recomendado entre 5% e 15%, editável."
+        ]
+      ],
+      "formulas": {}
+    },
+    "05_ESPECIFICACAO": {
+      "range": "A1:F46",
+      "dimensions": {
+        "rows": 46,
+        "columns": 6
+      },
+      "data": [
+        [
+          "Especificação funcional e educativa para execução técnica",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Campos finais da calculadora",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Campo",
+          "Unidade",
+          "Módulo",
+          "Obrigatório?",
+          "Tratamento vazio",
+          "Valor inválido"
+        ],
+        [
+          "Módulo",
+          "Vegetal/Animal",
+          "Ambos",
+          "Sim",
+          "Bloquear cálculo",
+          "Deve ser Vegetal ou Animal"
+        ],
+        [
+          "Produto/atividade",
+          "texto",
+          "Ambos",
+          "Sim",
+          "Alerta",
+          "Permitir texto livre"
+        ],
+        [
+          "Unidade comercial",
+          "kg/caixa/saca/etc.",
+          "Ambos",
+          "Sim",
+          "Bloquear cálculo",
+          "Lista ou texto 'outro'"
+        ],
+        [
+          "Quantidade por unidade comercial",
+          "número",
+          "Ambos",
+          "Sim",
+          "Bloquear cálculo",
+          "Deve ser > 0"
+        ],
+        [
+          "Preço líquido esperado",
+          "R$/unid. comercial",
+          "Ambos",
+          "Sim",
+          "Bloquear semáforo",
+          "Deve ser > 0"
+        ],
+        [
+          "Margem desejada",
+          "%",
+          "Ambos",
+          "Não",
+          "Assumir 0%",
+          "Deve ser >= 0%"
+        ],
+        [
+          "Reserva",
+          "%",
+          "Ambos",
+          "Não",
+          "Assumir 0%",
+          "0% a 50%"
+        ],
+        [
+          "Área",
+          "m² ou ha",
+          "Vegetal",
+          "Condicional",
+          "Obrigatória se usar produtividade",
+          "Deve ser > 0"
+        ],
+        [
+          "Produtividade",
+          "unid./área",
+          "Vegetal",
+          "Condicional",
+          "Usar produção bruta informada",
+          "Deve ser > 0"
+        ],
+        [
+          "Produção bruta informada",
+          "unid. técnica",
+          "Vegetal",
+          "Condicional",
+          "Usar área x produtividade",
+          "Deve ser > 0"
+        ],
+        [
+          "Perda vegetal",
+          "%",
+          "Vegetal",
+          "Não",
+          "Assumir 0% com alerta",
+          "0% a 80%"
+        ],
+        [
+          "Tipo animal",
+          "Contínua/Lote",
+          "Animal",
+          "Sim",
+          "Bloquear cálculo animal",
+          "Contínua ou Lote"
+        ],
+        [
+          "Nº animais/colmeias",
+          "número",
+          "Animal",
+          "Sim",
+          "Bloquear cálculo animal",
+          "Deve ser > 0"
+        ],
+        [
+          "Produção média/dia",
+          "litro/ovo/dia",
+          "Animal contínua",
+          "Sim",
+          "Bloquear contínua",
+          "Deve ser > 0"
+        ],
+        [
+          "Dias",
+          "dias",
+          "Animal contínua",
+          "Sim",
+          "Bloquear contínua",
+          "Deve ser > 0"
+        ],
+        [
+          "Peso médio venda",
+          "kg",
+          "Animal lote",
+          "Sim",
+          "Bloquear lote",
+          "Deve ser > 0"
+        ],
+        [
+          "Mortalidade/perda animal",
+          "%",
+          "Animal",
+          "Não",
+          "Assumir 0%",
+          "0% a 100%"
+        ],
+        [
+          "Custos",
+          "R$",
+          "Ambos",
+          "Sim",
+          "Assumir 0 só se confirmado",
+          "Não pode ser negativo"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Fórmulas principais",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Item",
+          "Fórmula lógica",
+          "Observação",
+          null,
+          null,
+          null
+        ],
+        [
+          "Custo base",
+          "'Insumos + Aquisição + Mão de obra + Energia + Sanidade + Serviços + Estrutura + Embalagem + Frete + Outros + Custo variável unitário x Produção vendável comercial",
+          "Usado nos dois módulos.",
+          null,
+          null,
+          null
+        ],
+        [
+          "Custo total",
+          "'Custo base x (1 + Reserva para imprevistos)",
+          "Reserva em percentual.",
+          null,
+          null,
+          null
+        ],
+        [
+          "Produção vegetal bruta",
+          "'Área x Produtividade OU Produção bruta informada",
+          "Se houver produção informada, ela prevalece.",
+          null,
+          null,
+          null
+        ],
+        [
+          "Produção vegetal vendável",
+          "'Produção bruta x (1 - Perda esperada)",
+          "Depois converte para unidade comercial.",
+          null,
+          null,
+          null
+        ],
+        [
+          "Produção animal contínua",
+          "'Nº animais x Produção média/dia x Dias x (1 - Perda)",
+          "Leite, ovos, mel por período.",
+          null,
+          null,
+          null
+        ],
+        [
+          "Produção animal lote",
+          "'Nº animais x (1 - Mortalidade) x Peso médio de venda",
+          "Frango, suíno, peixe, cordeiro.",
+          null,
+          null,
+          null
+        ],
+        [
+          "Conversão comercial",
+          "'Produção técnica vendável / Quantidade por unidade comercial",
+          "Ex.: ovos/12; cabeças/20; kg/15 para arroba.",
+          null,
+          null,
+          null
+        ],
+        [
+          "Preço mínimo",
+          "'Custo total / Produção vendável comercial",
+          "Bloqueia se produção = 0.",
+          null,
+          null,
+          null
+        ],
+        [
+          "Receita esperada",
+          "'Produção vendável comercial x Preço líquido esperado",
+          "Preço líquido recebido pelo produtor.",
+          null,
+          null,
+          null
+        ],
+        [
+          "Resultado estimado",
+          "'Receita esperada - Custo total",
+          "Lucro ou prejuízo estimado.",
+          null,
+          null,
+          null
+        ],
+        [
+          "Margem de segurança",
+          "'(Preço líquido esperado / Preço mínimo) - 1",
+          "Exibida em %.",
+          null,
+          null,
+          null
+        ],
+        [
+          "Preço alvo",
+          "'Preço mínimo x (1 + Margem desejada)",
+          "Usado no amarelo/verde.",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Regra do semáforo",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Semáforo",
+          "Condição",
+          "Mensagem",
+          null,
+          null,
+          null
+        ],
+        [
+          "⚪ Preencher",
+          "Campo obrigatório vazio ou inválido",
+          "Complete os dados antes de decidir.",
+          null,
+          null,
+          null
+        ],
+        [
+          "🔴 Vermelho",
+          "Preço esperado < preço mínimo",
+          "Venda ou produção com risco de prejuízo.",
+          null,
+          null,
+          null
+        ],
+        [
+          "🟡 Amarelo",
+          "Preço esperado >= preço mínimo e < preço alvo",
+          "Cobre custo, mas folga é baixa.",
+          null,
+          null,
+          null
+        ],
+        [
+          "🟢 Verde",
+          "Preço esperado >= preço alvo",
+          "Preço acima do mínimo com margem de segurança.",
+          null,
+          null,
+          null
+        ]
+      ],
+      "formulas": {}
+    },
+    "06_FONTES_ORIENTACAO": {
+      "range": "A1:D24",
+      "dimensions": {
+        "rows": 24,
+        "columns": 4
+      },
+      "data": [
+        [
+          "Fontes, orientação de uso e critério educativo",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Fonte sugerida",
+          "Uso no produto",
+          "URL",
+          "Observação"
+        ],
+        [
+          "CONAB — Preços Agropecuários",
+          "Comparar preço esperado, ruim e bom",
+          "https://portaldeinformacoes.conab.gov.br/precos-agropecuarios.html",
+          "Usar como referência nacional; preço real deve ser líquido ao produtor."
+        ],
+        [
+          "CONAB — Custos de Produção",
+          "Validar custos técnicos por cultura",
+          "https://portaldeinformacoes.conab.gov.br/",
+          "Usar como referência, não como custo automático obrigatório."
+        ],
+        [
+          "CEPEA/ESALQ",
+          "Consultar indicadores agropecuários",
+          "https://cepea.org.br/",
+          "Bom para grãos, leite, suínos, boi, hortifrúti e outros indicadores."
+        ],
+        [
+          "CEAGESP/CEASA local",
+          "Cotação de hortifrúti e sazonalidade",
+          "https://ceagesp.gov.br/cotacoes/",
+          "Cotação de atacado; não é sempre preço recebido pelo produtor."
+        ],
+        [
+          "CEAGESP — Medidas hortaliças",
+          "Embalagens e pesos de hortaliças",
+          "https://ceagesp.gov.br/wp-content/uploads/2021/01/medidaHortalicas.pdf",
+          "Usar para unidade e conversão."
+        ],
+        [
+          "CEAGESP — Medidas frutas",
+          "Embalagens e pesos de frutas",
+          "https://ceagesp.gov.br/wp-content/uploads/2015/06/medidaFrutas.pdf",
+          "Usar para unidade e conversão."
+        ],
+        [
+          "EMBRAPA",
+          "Validar ciclo, produtividade e manejo",
+          "https://www.embrapa.br/",
+          "Usar para referências produtivas por cultura/atividade."
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Texto curto de orientação de uso",
+          null,
+          null,
+          null
+        ],
+        [
+          "Use o Mini Raio-X antes de plantar, criar, vender ou aceitar uma proposta. Escolha o produto, informe como você realmente vende, preencha a produção vendável, os custos e o preço líquido que entra no seu bolso. O preço mínimo mostra o menor valor para não vender no prejuízo. O semáforo indica se a venda está segura, apertada ou arriscada. Atualize sempre que mudar custo, produção, perda, canal ou cotação.",
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Decisão técnica final",
+          null,
+          null,
+          null
+        ],
+        [
+          "Produto final",
+          "Módulo Vegetal + Módulo Animal",
+          null,
+          null
+        ],
+        [
+          "Unidade comercial",
+          "Sempre editável pelo usuário",
+          null,
+          null
+        ],
+        [
+          "Conversão",
+          "Automática por quantidade por unidade comercial",
+          null,
+          null
+        ],
+        [
+          "Semáforo",
+          "Único para os dois módulos",
+          null,
+          null
+        ],
+        [
+          "Preço de referência",
+          "Fonte externa deve ser informada, mas o cálculo usa preço líquido recebido",
+          null,
+          null
+        ],
+        [
+          "Uso educativo",
+          "Planilha ensina o produtor a reconhecer custo, preço mínimo e risco antes da venda",
+          null,
+          null
+        ]
+      ],
+      "formulas": {}
+    },
+    "07_LOGICA_DIDATICA": {
+      "range": "A1:H83",
+      "dimensions": {
+        "rows": 83,
+        "columns": 8
+      },
+      "data": [
+        [
+          "LÓGICA DIDÁTICA — MINI RAIO-X DO PREÇO MÍNIMO",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Objetivo educativo",
+          "Fazer o produtor entender, em poucos passos, qual é o menor preço para não vender no prejuízo e qual decisão tomar pelo semáforo.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Princípio central",
+          "O preço mínimo deve sair na mesma unidade em que o produtor realmente vende: caixa, saca, cabeça, maço, dúzia, litro, kg, arroba, tonelada ou unidade.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "1. Fluxo didático de uso da calculadora",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Etapa",
+          "Pergunta para o produtor",
+          "Campos usados",
+          "O que o produto ensina",
+          "Regra funcional",
+          "Erro comum evitado",
+          "Mensagem curta na planilha",
+          "Saída esperada"
+        ],
+        [
+          1,
+          "O que você vai calcular?",
+          "Módulo, produto/atividade, região, canal",
+          "Antes de calcular preço, é preciso separar produção vegetal de produção animal.",
+          "Usuário escolhe Vegetal ou Animal.",
+          "Usar a mesma lógica produtiva para alface, leite e frango.",
+          "Escolha primeiro o tipo de produção.",
+          "Módulo definido"
+        ],
+        [
+          2,
+          "Como você vende esse produto?",
+          "Unidade comercial, quantidade por unidade",
+          "O preço mínimo precisa sair na unidade de negociação real.",
+          "Unidade sugerida pela base, mas sempre editável.",
+          "Forçar tudo em kg, mesmo quando o produtor vende por caixa, cabeça, dúzia ou litro.",
+          "Informe como você realmente recebe.",
+          "Unidade comercial validada"
+        ],
+        [
+          3,
+          "Quanto você produz antes das perdas?",
+          "Área/produtividade ou nº de animais/produção média",
+          "O cálculo parte da produção esperada, mas ainda não é a produção vendável.",
+          "Vegetal usa área/produtividade; animal usa lote, produção diária ou peso médio.",
+          "Misturar produtividade bruta com produto vendido.",
+          "Informe a produção antes das perdas.",
+          "Produção bruta calculada"
+        ],
+        [
+          4,
+          "Quanto sobra para vender?",
+          "Perda, mortalidade, descarte, quebra",
+          "Preço mínimo deve considerar o que de fato será vendido.",
+          "Produção vendável = produção bruta ajustada por perdas.",
+          "Calcular preço sobre produção ideal e criar falsa margem.",
+          "Desconte perdas, descarte ou mortalidade.",
+          "Produção vendável"
+        ],
+        [
+          5,
+          "Quanto custa produzir?",
+          "Custos diretos, variáveis, fixos, rateios e reserva",
+          "Todo custo relevante do ciclo entra antes da decisão de preço.",
+          "Custo total = custo base + custo variável + reserva.",
+          "Esquecer embalagem, frete, comissão, mão de obra familiar e rateio.",
+          "Some todos os custos do ciclo.",
+          "Custo total"
+        ],
+        [
+          6,
+          "Qual preço você espera receber?",
+          "Preço líquido esperado, fonte, data",
+          "Comparar com o valor que entra no bolso, não com preço cheio de mercado.",
+          "Preço líquido esperado deve estar na mesma unidade comercial.",
+          "Usar cotação de atacado como se fosse preço recebido na roça.",
+          "Use o preço líquido que você realmente recebe.",
+          "Preço esperado validado"
+        ],
+        [
+          7,
+          "O preço cobre o custo?",
+          "Preço mínimo, preço alvo, margem",
+          "A calculadora mostra o menor preço para não perder dinheiro e a folga acima dele.",
+          "Preço mínimo = custo total / produção vendável comercial.",
+          "Vender acima do custo parcial e achar que teve lucro.",
+          "Compare preço esperado com preço mínimo.",
+          "Preço mínimo e margem"
+        ],
+        [
+          8,
+          "Qual decisão tomar?",
+          "Semáforo e mensagem",
+          "O produtor recebe uma leitura simples: seguro, apertado ou arriscado.",
+          "Verde, Amarelo, Vermelho ou Preencher.",
+          "Decidir só pelo preço de mercado, sem olhar custo próprio.",
+          "Leia o semáforo antes de aceitar a venda.",
+          "Decisão prática"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "2. Lógica didática por módulo",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Módulo",
+          "Quando usar",
+          "Produção bruta",
+          "Perda/desconto",
+          "Produção vendável",
+          "Unidades comuns",
+          "Ponto de atenção",
+          "Exemplo"
+        ],
+        [
+          "Vegetal",
+          "Culturas, hortaliças, frutas, grãos, raízes e tubérculos.",
+          "Área x produtividade ou quantidade colhida.",
+          "Perda de campo, seleção, descarte e pós-colheita.",
+          "Produção bruta x (1 - perda). Depois converter para unidade comercial.",
+          "kg, caixa, saca, cabeça, maço, unidade, tonelada.",
+          "A unidade de venda muda por cultura, região e canal.",
+          "Alface por caixa de 20 cabeças; milho por saca de 60 kg."
+        ],
+        [
+          "Animal contínuo",
+          "Leite, ovos, mel e outras produções recorrentes.",
+          "Animais/colmeias x produção média x dias.",
+          "Descarte, quebra, perda, leite não vendido.",
+          "Produção do período x (1 - perda).",
+          "litro, dúzia, caixa, kg.",
+          "Definir período de cálculo: dia, mês ou ciclo.",
+          "5 vacas x litros/dia x 30 dias."
+        ],
+        [
+          "Animal por lote",
+          "Frango, suíno, peixe, cordeiro, cabrito, bovino e lotes de venda.",
+          "Animais alojados x peso médio ou unidades vendidas.",
+          "Mortalidade, descarte e peso não comercializado.",
+          "Animais sobreviventes x peso médio ou unidade final.",
+          "kg vivo, kg carcaça, arroba, unidade.",
+          "Separar preço por kg vivo, kg carcaça e arroba.",
+          "Suíno em kg vivo; boi em arroba."
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "3. Microtextos didáticos por campo",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Campo",
+          "Ajuda curta para a planilha",
+          "O que validar",
+          "Quando bloquear",
+          "Exemplo vegetal",
+          "Exemplo animal",
+          "Mensagem de alerta",
+          "Obrigatório"
+        ],
+        [
+          "Módulo",
+          "Escolha se o cálculo é para cultivo vegetal ou produção animal.",
+          "Vegetal ou Animal.",
+          "Se vazio.",
+          "Vegetal",
+          "Animal",
+          "Escolha o módulo antes de preencher.",
+          "Sim"
+        ],
+        [
+          "Produto/atividade",
+          "Informe o que será produzido ou vendido.",
+          "Texto preenchido.",
+          "Não bloquear; apenas alertar.",
+          "Alface crespa",
+          "Leite",
+          "Informe o produto para organizar o cálculo.",
+          "Recomendado"
+        ],
+        [
+          "Unidade comercial",
+          "Informe como você vende e recebe.",
+          "kg, caixa, saca, cabeça, maço, dúzia, litro, arroba, tonelada ou unidade.",
+          "Se vazio.",
+          "Caixa",
+          "Litro",
+          "Sem unidade não dá para calcular preço mínimo.",
+          "Sim"
+        ],
+        [
+          "Quantidade por unidade",
+          "Informe quanto existe dentro de cada unidade comercial.",
+          "Maior que zero.",
+          "Se vazio ou <= 0.",
+          "20 cabeças por caixa",
+          "12 ovos por dúzia",
+          "Revise a quantidade por unidade comercial.",
+          "Sim"
+        ],
+        [
+          "Produção bruta",
+          "Informe a produção antes das perdas.",
+          "Maior que zero.",
+          "Se vazia e não houver fórmula alternativa.",
+          "1.000 cabeças",
+          "100 aves x 0,75 ovo/dia",
+          "Informe a produção antes das perdas.",
+          "Sim"
+        ],
+        [
+          "Perda/mortalidade/descarte",
+          "Informe o percentual que não será vendido.",
+          "Entre 0% e limite definido.",
+          "Não bloquear se vazio; assumir 0% com alerta.",
+          "12% perda",
+          "3% quebra",
+          "Campo vazio: considerando 0%.",
+          "Recomendado"
+        ],
+        [
+          "Custo total",
+          "Some todos os custos do ciclo, inclusive mão de obra, embalagem, frete e reserva.",
+          "Custos não negativos.",
+          "Se custo obrigatório inválido.",
+          "Insumos + embalagem + frete",
+          "Ração + sanidade + energia",
+          "Revise custos negativos ou ausentes.",
+          "Sim"
+        ],
+        [
+          "Preço líquido esperado",
+          "Informe o valor que realmente entra no seu bolso.",
+          "Maior que zero e na mesma unidade comercial.",
+          "Se vazio ou <= 0.",
+          "R$/caixa",
+          "R$/litro",
+          "Sem preço esperado, o semáforo não decide.",
+          "Sim"
+        ],
+        [
+          "Fonte da cotação",
+          "Informe de onde veio o preço usado como referência.",
+          "Texto, comprador, CEASA, CONAB, CEPEA ou cooperativa.",
+          "Não bloquear; alertar.",
+          "CEASA local",
+          "Laticínio/cooperativa",
+          "Preço sem fonte: valide antes de decidir.",
+          "Recomendado"
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "4. Explicação didática das fórmulas",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Indicador",
+          "Fórmula técnica",
+          "Explicação para o produtor",
+          "Exemplo de leitura",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Custo total",
+          "Custo base x (1 + reserva)",
+          "Mostra tudo que foi gasto para produzir e vender, já com margem para imprevistos.",
+          "Se o custo total é R$ 2.500, esse valor precisa voltar na venda.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Produção vendável",
+          "Produção bruta x (1 - perdas)",
+          "É a parte da produção que realmente pode virar dinheiro.",
+          "Se produziu 1.000 e perdeu 12%, vende 880.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Produção comercial",
+          "Produção vendável técnica / quantidade por unidade",
+          "Converte a produção para a forma de venda.",
+          "880 alfaces / 20 por caixa = 44 caixas.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Preço mínimo",
+          "Custo total / produção comercial",
+          "É o menor preço para não vender no prejuízo.",
+          "Se custou R$ 2.547,60 e vende 44 caixas, mínimo é R$ 57,90/caixa.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Receita esperada",
+          "Preço líquido esperado x produção comercial",
+          "Mostra quanto deve entrar se vender pelo preço informado.",
+          "44 caixas x R$ 70 = R$ 3.080.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Resultado estimado",
+          "Receita esperada - custo total",
+          "Mostra se sobra ou falta dinheiro depois de pagar o custo.",
+          "R$ 3.080 - R$ 2.547,60 = R$ 532,40.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Margem de segurança",
+          "(Preço esperado / preço mínimo) - 1",
+          "Mostra a folga do preço recebido acima do mínimo.",
+          "20% de margem significa que há folga acima do custo.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "5. Interpretação didática do semáforo",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Semáforo",
+          "Condição",
+          "Tradução simples",
+          "Mensagem para a planilha",
+          "Ação recomendada",
+          "Pode vender?",
+          "Tom educativo",
+          "Próximo passo"
+        ],
+        [
+          "⚪ Preencher",
+          "Faltam dados ou há valor inválido.",
+          "Ainda não existe base segura para decidir.",
+          "Complete os campos obrigatórios antes de tirar conclusão.",
+          "Revisar unidade, produção, custos e preço.",
+          "Não decidir ainda.",
+          "Orientador",
+          "Corrigir preenchimento."
+        ],
+        [
+          "🔴 Vermelho",
+          "Preço esperado menor que preço mínimo.",
+          "A venda tende a não pagar todos os custos.",
+          "Nesse preço, existe risco de prejuízo.",
+          "Renegociar, reduzir custo, mudar canal ou revisar produção.",
+          "Não recomendado.",
+          "Alerta",
+          "Não aceitar sem ajuste."
+        ],
+        [
+          "🟡 Amarelo",
+          "Preço esperado cobre o mínimo, mas não alcança o preço alvo.",
+          "A venda paga o custo, mas está apertada.",
+          "Você não está no prejuízo, mas a folga é baixa.",
+          "Buscar preço melhor, reduzir perdas ou cortar custos.",
+          "Com cautela.",
+          "Cauteloso",
+          "Negociar antes de fechar."
+        ],
+        [
+          "🟢 Verde",
+          "Preço esperado igual ou maior que preço alvo.",
+          "A venda cobre o custo e tem margem de segurança.",
+          "Preço acima do mínimo com folga.",
+          "Manter controle de custos e validar cotação.",
+          "Sim, se os dados estiverem corretos.",
+          "Confiante",
+          "Avançar com controle."
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "6. Textos prontos para orientar o usuário no produto pago",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Momento",
+          "Texto pronto",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Antes de preencher",
+          "Você não está tentando adivinhar o melhor preço do mercado. Você está descobrindo o menor preço que sua produção precisa receber para não vender no prejuízo.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Ao escolher a unidade",
+          "Não use kg automaticamente. Use a unidade em que você realmente vende: caixa, cabeça, saca, maço, dúzia, litro, arroba, tonelada ou unidade.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Ao informar produção",
+          "Informe primeiro a produção bruta. Depois desconte perdas, descarte, quebra ou mortalidade. O preço mínimo deve considerar apenas o que pode ser vendido.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Ao informar custos",
+          "Inclua todos os custos do ciclo: insumo, alimentação, mão de obra, energia, embalagem, frete, comissão, manutenção, taxa e reserva para imprevistos.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Ao informar preço",
+          "Use o preço líquido que realmente entra no seu bolso. Cotação de mercado serve como referência, mas pode ser diferente do preço recebido pelo produtor.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Após o resultado",
+          "Compare o preço esperado com o preço mínimo. Verde indica folga, amarelo indica aperto, vermelho indica risco de prejuízo e preencher indica que ainda faltam dados.",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "7. Exemplos didáticos rápidos",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Produto",
+          "Unidade correta",
+          "Conversão didática",
+          "O que o usuário aprende",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Alface",
+          "Caixa ou cabeça",
+          "Caixa com 20 cabeças: preço por caixa ÷ 20 = preço por cabeça.",
+          "Alface não deve ser travada em kg; depende do canal.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Milho",
+          "Saca",
+          "Saca de 60 kg: preço da saca ÷ 60 = preço por kg.",
+          "Grãos costumam ser negociados por saca.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Leite",
+          "Litro",
+          "Vacas x litros por dia x dias - descarte = litros vendáveis.",
+          "Produção animal contínua precisa de período.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Ovos",
+          "Dúzia ou caixa",
+          "Ovos vendáveis ÷ 12 = dúzias vendáveis.",
+          "A unidade de venda não é ovo individual quando o mercado usa dúzia.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Bovino",
+          "Arroba",
+          "Kg vendável ÷ 15 = arrobas.",
+          "Arroba exige conversão própria.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "8. Checklist didático de aprovação",
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Item",
+          "Critério de aprovação",
+          "Status esperado",
+          "Observação",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Unidade comercial",
+          "O produtor consegue alterar a unidade sugerida.",
+          "Aprovado",
+          "Essencial para alface, ovos, frutas e venda regional.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Conversão",
+          "A produção vendável é convertida para a unidade de venda.",
+          "Aprovado",
+          "Preço mínimo precisa sair na unidade que o produtor negocia.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Produção vendável",
+          "O cálculo desconta perdas, descarte, quebra ou mortalidade.",
+          "Aprovado",
+          "Não usar produção bruta como base do preço mínimo.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Custos",
+          "Checklist evita esquecimento de custos invisíveis.",
+          "Aprovado",
+          "Mão de obra familiar, embalagem, frete, comissão e rateio devem aparecer.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Preço líquido",
+          "O usuário informa o valor que realmente recebe.",
+          "Aprovado",
+          "Cotação de mercado não é automaticamente preço recebido.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Semáforo",
+          "A decisão final é simples e acionável.",
+          "Aprovado",
+          "Verde, amarelo, vermelho ou preencher.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Produto pago",
+          "A planilha ensina enquanto calcula.",
+          "Aprovado",
+          "A experiência deve parecer guiada, não apenas matemática.",
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "formulas": {}
+    },
+    "00_COMECE_AQUI": {
+      "range": "A1:F20",
+      "dimensions": {
+        "rows": 20,
+        "columns": 6
+      },
+      "data": [
+        [
+          "Mini Raio-X do Preço Mínimo — Comece aqui",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Use a ferramenta para estimar o menor preço que cobre os custos informados. Comece por um exemplo preenchido e depois substitua pelos seus próprios dados.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "ORDEM",
+          "COMO USAR",
+          null,
+          "SEMÁFORO",
+          "SIGNIFICADO",
+          "AÇÃO"
+        ],
+        [
+          1,
+          "Abra a aba 03_SIMULACOES e escolha um exemplo parecido com sua atividade.",
+          null,
+          "⚪ Preencher",
+          "Falta dado obrigatório ou há valor inválido.",
+          "Não decidir ainda."
+        ],
+        [
+          2,
+          "Na aba 01_CALCULADORA, escolha Vegetal ou Animal.",
+          null,
+          "🔴 Vermelho",
+          "Preço esperado abaixo do preço mínimo.",
+          "Rever preço, custo, canal ou produção."
+        ],
+        [
+          3,
+          "Informe o produto e a unidade em que você realmente vende.",
+          null,
+          "🟡 Amarelo",
+          "Cobre o custo, mas não alcança o preço alvo.",
+          "Negociar com cautela."
+        ],
+        [
+          4,
+          "Defina quanto existe dentro de cada unidade comercial.",
+          null,
+          "🟢 Verde",
+          "Preço esperado igual ou acima do preço alvo.",
+          "Avançar apenas se os dados estiverem corretos."
+        ],
+        [
+          5,
+          "Preencha a produção esperada antes das perdas.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          6,
+          "Informe perdas, descarte ou mortalidade.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          7,
+          "Some os custos do ciclo ou período.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          8,
+          "Informe o preço líquido que realmente entra no seu bolso.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          9,
+          "Leia o preço mínimo, o preço alvo e o semáforo.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          10,
+          "Revise os dados sempre que custo, produção, perda ou cotação mudar.",
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "LIMITES IMPORTANTES",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "O Mini Raio-X é uma ferramenta de apoio à decisão. Os resultados dependem dos dados informados pelo usuário.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Não há garantia de lucro, venda, crédito, negociação, ausência de prejuízo ou resultado financeiro.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "O produto não inclui análise individual, recomendação técnica agropecuária ou preenchimento personalizado.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          "Use sempre o preço líquido recebido e revise as unidades antes de tomar uma decisão.",
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "formulas": {}
+    },
+    "08_MODELO_NEGOCIACAO": {
+      "range": "A1:B16",
+      "dimensions": {
+        "rows": 16,
+        "columns": 2
+      },
+      "data": [
+        [
+          "Modelo de mensagem para negociação",
+          null
+        ],
+        [
+          "Copie o texto, substitua os campos entre colchetes e ajuste ao seu contexto. O modelo não garante fechamento ou melhoria de preço.",
+          null
+        ],
+        [
+          null,
+          null
+        ],
+        [
+          "MODELO DIRETO",
+          null
+        ],
+        [
+          "Olá, [nome]. Revisei meus custos e a produção esperada de [produto].",
+          null
+        ],
+        [
+          "Na unidade [unidade comercial], meu preço mínimo estimado ficou em R$ [preço mínimo].",
+          null
+        ],
+        [
+          "No valor de R$ [preço oferecido], a margem fica [apertada/negativa].",
+          null
+        ],
+        [
+          "Consigo fechar a partir de R$ [preço proposto], considerando [volume, prazo, retirada ou condição].",
+          null
+        ],
+        [
+          "Podemos ajustar essa condição?",
+          null
+        ],
+        [
+          null,
+          null
+        ],
+        [
+          "ANTES DE ENVIAR",
+          "CONFIRA"
+        ],
+        [
+          "1",
+          "Preço mínimo e preço proposto estão na mesma unidade comercial."
+        ],
+        [
+          "2",
+          "O valor informado é líquido, depois de frete, comissão e taxas."
+        ],
+        [
+          "3",
+          "Produção, perdas e custos foram revisados."
+        ],
+        [
+          "4",
+          "A mensagem não promete volume, qualidade ou prazo que você não consegue cumprir."
+        ],
+        [
+          "5",
+          "Os dados usados são seus; o vendedor do produto não analisa a negociação individualmente."
+        ]
+      ],
+      "formulas": {}
+    }
+  },
+  "summary": {
+    "sheet_count": 9,
+    "matrix_cell_slots": 2905,
+    "formula_cell_count": 53
+  }
+}
